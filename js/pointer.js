@@ -54,10 +54,8 @@ const init_pointer = (options) => {
         ringY = trace(ringY, mouseY, 0.2)
 
         if (document.querySelector(".p-action-click:hover")) {
-            pointer.style.borderColor = getOption("pointerColor")
             isHover = true
         } else {
-            pointer.style.borderColor = "white"
             isHover = false
         }
         ring.style.borderColor = getOption("pointerColor")
