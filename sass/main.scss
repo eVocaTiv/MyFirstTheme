@@ -1,0 +1,27 @@
+// Bootstrap imports.
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional imports.
+@import "../node_modules/bootstrap/scss/grid";
+
+// Global variables and Bootstrap overrides.
+$body-bg: #000;
+$body-color: #111;
+
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136,
+  "dark": #000000,
+);
+
+// Utility functions.
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+// Global styling rules.
+body > * {
+  // background-color: theme-color("dark");
+}
