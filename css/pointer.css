@@ -10,11 +10,12 @@
     width: 0;
     height: 0;
     border: 2.5px solid white;
+    background-color: white;
     position: fixed;
     border-radius: 4px;
     z-index: 1;
     pointer-events: none;
-    transition: border-color 1s;
+    transition: transform 0.25s ease-out;
 }
 
 #pointer-ring {
@@ -31,6 +32,7 @@
 }
 
 /* hide default cursor */
+
 html {
     cursor: none !important;
 }
