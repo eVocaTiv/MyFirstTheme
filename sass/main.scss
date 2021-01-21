@@ -3,26 +3,102 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+// Local imports.
+@import "home.scss";
+
 // Optional imports.
 @import "../node_modules/bootstrap/scss/grid";
 
 // Global variables and Bootstrap overrides.
-$body-bg: #000;
-$body-color: #111;
+$selected-theme: "fresh";
+$base-font-size: 1rem;
+$base-line-height: 1.25 * $base-font-size;
 
+// Color palette map.
 $theme-colors: (
-  "primary": #0074d9,
-  "danger": #ff4136,
-  "dark": #000000,
-  "background-dark": #0F0821,
+  "fresh": (
+    "primary": #5cdb95,
+    "background": #05386b,
+    "text": #edf5e1,
+  ),
+  "dull": (
+    "primary": #2e1114,
+    "background": #64485c,
+    "text": #adadad,
+  ),
 );
 
-// Utility functions.
-@function theme-color($key: "primary") {
-  @return map-get($theme-colors, $key);
+// Typography Map.
+$text-settings: (
+  "xs": (
+    font-size: 0.75rem,
+    // 12px
+    line-height: $base-line-height,
+  ),
+  "sm": (
+    font-size: 0.875rem,
+    // 14px
+    line-height: $base-line-height,
+  ),
+  "base": (
+    font-size: 1rem,
+    // 16px
+    line-height: $base-line-height,
+  ),
+  "md": (
+    font-size: 1.125rem,
+    // 18px
+    line-height: $base-line-height * 2,
+  ),
+  "lg": (
+    font-size: 1.25rem,
+    // 20px
+    line-height: $base-line-height * 2,
+  ),
+  "xl": (
+    font-size: 1.5rem,
+    // 24px
+    line-height: $base-line-height * 2,
+  ),
+);
+
+// Utility functions and mixins.
+// Color theme.
+@function theme-primary-color($key: "fresh") {
+  $selected-theme-colors: map-get($theme-colors, $key);
+  @return map-get($selected-theme-colors, "primary");
+}
+@function theme-background-color($key: "fresh") {
+  $selected-theme-colors: map-get($theme-colors, $key);
+  @return map-get($selected-theme-colors, "background");
+}
+@function theme-text-color($key: "fresh") {
+  $selected-theme-colors: map-get($theme-colors, $key);
+  @return map-get($selected-theme-colors, "text");
+}
+
+// Animate an element.
+@mixin animateProperty($property) {
+  transition: $property 0.5s ease-in-out;
+}
+
+// Font size utils.
+@function text-scale($level) {
+  @return map-get(map-get($text-settings, $level), "font-size");
+}
+
+@function line-height($level) {
+  @return map-get(map-get($text-settings, $level), "line-height");
+}
+
+@mixin text-setting($level) {
+  font-size: text-scale($level);
+  line-height: line-height($level);
 }
 
 // Global styling rules.
+// TODO: Customize through theme selection input.
 body {
-  background-color: theme-color("background-dark");
+  // background-color: theme-background-color($selected-theme);
+  @include text-setting("xs");
 }
