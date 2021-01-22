@@ -1,0 +1,7 @@
+@import "./utils/common.scss";
+
+.login-page {
+  &__header {
+    @include text-setting("xxl");
+  }
+}
