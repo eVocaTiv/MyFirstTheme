@@ -690,7 +690,7 @@
     color: #edf5e1;
     background: url(../img/login-bg.jpg) rgba(5, 56, 107, 0.6);
     background-size: cover;
-    background-blend-mode: multiply; }
+    background-blend-mode: color-burn; }
   .login-page__container {
     width: 40%; }
   .login-page__header {
@@ -703,8 +703,7 @@
     color: #ddf4fa; }
   .login-page__submit {
     width: 100%;
-    height: 3rem;
-    border-color: #05386b; }
+    height: 3rem; }
   .login-page__alternative-logins--1, .login-page__alternative-logins--2 {
     width: 50%; }
   .login-page__alternative-logins--1:hover, .login-page__alternative-logins--2:hover {

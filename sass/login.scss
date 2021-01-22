@@ -7,8 +7,7 @@
     color: theme-text-color($selected-theme);
     background: url(../img/login-bg.jpg) rgba(theme-background-color($selected-theme), 0.6);
     background-size: cover;
-    background-blend-mode: multiply;
-    // box-shadow: inset 0 0 0 1000px rgba(theme-background-color($selected-theme), 0.6);
+    background-blend-mode: color-burn;
   }
 
   &__container {
@@ -33,7 +32,6 @@
   &__submit {
     width: 100%;
     height: $spacer * 3;
-    border-color: theme-background-color($selected-theme);
   }
 
   &__alternative-logins--1,
