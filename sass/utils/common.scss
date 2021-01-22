@@ -7,13 +7,15 @@ $base-line-height: 1.25 * $base-font-size;
 $theme-colors: (
   "fresh": (
     "primary": #5cdb95,
-    "background": #edf5e1,
-    "text": #05386b,
+    "background": #05386b,
+    "text": #edf5e1,
+    "secondary-text": #ddf4fa,
   ),
   "dull": (
     "primary": #2e1114,
     "background": #64485c,
     "text": #adadad,
+    "secondary-text": #c9ecf5,
   ),
 );
 
@@ -81,12 +83,17 @@ $text-settings: (
   @return map-get($selected-theme-colors, "text");
 }
 
+@function theme-secondary-text-color($key: "fresh") {
+  $selected-theme-colors: map-get($theme-colors, $key);
+  @return map-get($selected-theme-colors, "secondary-text");
+}
+
 // Animate an element.
 @mixin animateProperty($property) {
   transition: $property 0.5s ease-in-out;
 }
 
-// Font size utils.
+// Font utils.
 @function text-scale($level) {
   @return map-get(map-get($text-settings, $level), "font-size");
 }
@@ -99,3 +106,9 @@ $text-settings: (
   font-size: text-scale($level);
   line-height: line-height($level);
 }
+
+@mixin center-text() {
+  text-align: center;
+}
+
+// TODO: Add fonts

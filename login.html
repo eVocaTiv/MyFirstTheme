@@ -21,11 +21,59 @@
 
     <title>Document</title>
   </head>
-  <body>
-    <div class="login-page container--fluid">
-      <div class="login-page__header container--fluid">
-        Login
+  <body class="login-page__body">
+    <div class="container-sm pt-5 login-page__container">
+      <div class="row login-page__header">
+        <div class="col m-5">Login</div>
       </div>
+      <form>
+        <div class="form-floating mb-3 login-page__user-id-container">
+          <input
+            type="text"
+            placeholder="abc@gmail.com"
+            class="form-control login-page__user-id"
+            id="login-page__user-id"
+            aria-describedby="login-page__user-id__help"
+          />
+          <label for="login-page__user-id" class="login-page__user-id__label">Username or Email</label>
+          <div id="login-page__user-id__help" class="form-text login-page__user-id__help">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="form-floating mb-3 login-page__pwd-container">
+          <input placeholder="Enter password" type="password" class="form-control login-page__pwd" id="login-page__pwd" />
+          <label for="login-page__pwd" class="form-label">Password</label>
+        </div>
+        <!-- Clicking button redirects to another page - ONLY FOR DEMONSTRATION, remove onclick property as per need -->
+        <button type="submit" onclick="location.href = '/';" class="btn btn-primary mt-4 login-page__submit">
+          Enter Site &nbsp; <i class="fas fa-arrow-right"></i>
+        </button>
+        <div class="row login-page__divider mt-5">
+          <div class="col"><hr /></div>
+          <div class="col-auto">OR</div>
+          <div class="col"><hr /></div>
+        </div>
+
+        <!-- Clicking buttons redirects to another page - ONLY FOR DEMONSTRATION, remove onclick property as per need -->
+        <div class="login-page__alternative-logins row">
+          <button type="submit" onclick="location.href = '/';" class="btn btn-outline-light mt-4 col login-page__alternative-logins--1 login-page__google">
+            <i class="fab fa-google"></i>
+            &nbsp;Continue With Google 
+          </button>
+          <div class="col-sm-1"></div>
+          <button type="submit" onclick="location.href = '/';" class="btn btn-outline-light mt-4 col login-page__alternative-logins--1 login-page__facebook">
+            <i class="fab fa-facebook"></i>
+            &nbsp;Continue With Facebook 
+          </button>
+        </div>
+
+        <a href="#"" class="text-decoration-none row mt-5 justify-content-center login-page__forgot-credentials">
+         Forgot credentials?
+        </a>
+        <a href="#"" class="text-decoration-none row mt-3 justify-content-center login-page__new-user">
+          New User?
+         </a>
+      </form>
     </div>
     <!-- POST SCRIPTS -->
     <!-- 1. jQuery and Bootstrap Bundle (includes Popper) -->

@@ -683,11 +683,40 @@
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
-.login-page__header {
-  font-size: 2.5rem;
-  line-height: 2.5rem; }
-
-body {
-  background-color: #edf5e1;
+.login-page {
   font-size: 0.75rem;
   line-height: 1.25rem; }
+  .login-page__body {
+    color: #edf5e1;
+    background: url(../img/login-bg.jpg) rgba(5, 56, 107, 0.6);
+    background-size: cover;
+    background-blend-mode: multiply; }
+  .login-page__container {
+    width: 40%; }
+  .login-page__header {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center; }
+  .login-page__user-id-container, .login-page__pwd-container {
+    color: #05386b; }
+  .login-page__user-id__help, .login-page__divider {
+    color: #ddf4fa; }
+  .login-page__submit {
+    width: 100%;
+    height: 3rem;
+    border-color: #05386b; }
+  .login-page__alternative-logins--1, .login-page__alternative-logins--2 {
+    width: 50%; }
+  .login-page__alternative-logins--1:hover, .login-page__alternative-logins--2:hover {
+    color: #05386b; }
+  .login-page__forgot-credentials, .login-page__new-user {
+    color: #ddf4fa; }
+  .login-page__forgot-credentials:hover, .login-page__new-user:hover {
+    color: #edf5e1; }
+
+@media (max-width: 767.98px) {
+  .login-page__container {
+    width: 60%; } }
+
+body {
+  height: 100vh; }
