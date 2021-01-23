@@ -17,8 +17,9 @@
     background-blend-mode: color-burn;
   }
 
+  // override bootstrap container width
   &__container {
-    width: 40%;
+    width: 40% !important;
   }
 
   &__header {
@@ -68,7 +69,7 @@
 @include media-breakpoint-down(sm) {
   .login-page {
     &__container {
-      width: 60%;
+      width: 70% !important;
     }
   }
 }
