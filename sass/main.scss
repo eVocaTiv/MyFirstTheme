@@ -30,3 +30,10 @@ body {
 // XX-Large devices (larger desktops, 1400px and up)
 @include media-breakpoint-up(xxl) {
 }
+
+
+// Keep navbar-nav inline
+.navbar-nav {
+  display: inline;
+}
+

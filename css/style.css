@@ -732,15 +732,11 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.posts-page__nav-container {
-  height: 10vh; }
-
-.posts-page__communities-dropdown-toggle {
-  color: white; }
-
-@media (min-width: 1400px) {
-  .posts-page .posts-page__nav-container {
-    height: 15vh; } }
+.posts-page__nav__user-actions, .posts-page__nav__search-communities, .posts-page__nav__logo {
+  text-align: center; }
 
 body {
   min-height: 100vh; }
+
+.navbar-nav {
+  display: inline; }
