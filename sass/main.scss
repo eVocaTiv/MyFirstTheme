@@ -1,18 +1,35 @@
-// Bootstrap imports.
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+// Local imports. 
+@import "pages/login.scss"; 
+@import "pages/posts.scss";
+
 // Optional Bootstrap imports.
 @import "../node_modules/bootstrap/scss/grid";
-
-// Local imports.
-@import "./pages/login.scss";
-@import "./pages/posts.scss";
 
 // ***Global styling rules ***
 body {
   min-height: 100vh;
 }
+
+// Overrides
+
+// Default nav-link styling.
+.nav-link {
+  color: theme-text-color($selected-theme);
+}
+
+.nav-link:hover {
+  color: theme-secondary-text-color($selected-theme);
+}
+
+.nav-link.active {
+  background-color: theme-background-color($selected-theme) !important;
+}
+
+// Keep navbar-nav inline.
+.navbar-nav {
+  display: inline;
+}
+
 
 // Media Queries.
 // Small devices (landscape phones, 576px and up)
@@ -30,23 +47,3 @@ body {
 // XX-Large devices (larger desktops, 1400px and up)
 @include media-breakpoint-up(xxl) {
 }
-
-
-// Keep navbar-nav inline
-.navbar-nav {
-  display: inline;
-}
-
-// Override default nav-link styling 
-.nav-link {
-  color: theme-text-color($selected-theme);
-}
-
-.nav-link:hover {
-  color: theme-secondary-text-color($selected-theme);
-}
-
-.nav-link.active {
-  background-color: theme-background-color($selected-theme) !important;
-}
-

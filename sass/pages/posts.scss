@@ -1,5 +1,10 @@
 @import "../utils/common.scss";
 
+// Bootstrap imports.
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
 // Posts Page Styling.
 .posts-page {
   &__body {
@@ -45,14 +50,23 @@
       text-align: center;
     }
   }
+
+
+  // TODO: Pagination
+
+  // &__pagination__item {
+  //   background-color: theme-background-color($selected-theme);
+  //   > a {
+  //     color: theme-primary-color($selected-theme);
+  //     background-color: theme-background-color($selected-theme);
+  //   }
+  // }
+  // &__pagination__item.active > a {
+  //   background-color: theme-text-color($selected-theme);
+  // }
 }
 
 // Media Queries.
 // XX-Large devices (992px and down)
-@include media-breakpoint-down(lg) {
-  .posts-page {
-    &__options {
-        width: 50%;
-    }
-  }
+@include media-breakpoint-down(xl) {
 }

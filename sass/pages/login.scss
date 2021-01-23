@@ -1,5 +1,10 @@
 @import "../utils/common.scss";
 
+// Bootstrap imports.
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
 // Login Page Styling.
 .login-page {
   @include text-setting("xs");
