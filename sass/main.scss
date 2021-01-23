@@ -6,8 +6,8 @@
 @import "../node_modules/bootstrap/scss/grid";
 
 // Local imports.
-@import "./pages/login";
-@import "./pages/posts";
+@import "./pages/login.scss";
+@import "./pages/posts.scss";
 
 // ***Global styling rules ***
 body {
@@ -35,5 +35,18 @@ body {
 // Keep navbar-nav inline
 .navbar-nav {
   display: inline;
+}
+
+// Override default nav-link styling 
+.nav-link {
+  color: theme-text-color($selected-theme);
+}
+
+.nav-link:hover {
+  color: theme-secondary-text-color($selected-theme);
+}
+
+.nav-link.active {
+  background-color: theme-background-color($selected-theme) !important;
 }
 

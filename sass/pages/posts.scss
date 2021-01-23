@@ -23,11 +23,36 @@
   &__nav__logo {
     @include center-text();
   }
+
+  &__options {
+    color: theme-text-color($selected-theme);
+  }
+
+  &__filters,
+  &__tags {
+    &__button {
+      color: theme-text-color($selected-theme);
+    }
+    &__dropdown > button,
+    &__dropdown-menu {
+      @include text-setting("xs");
+    }
+  }
+
+  &__filters {
+    &__icon {
+      align-self: center;
+      text-align: center;
+    }
+  }
 }
 
 // Media Queries.
 // XX-Large devices (992px and down)
 @include media-breakpoint-down(lg) {
   .posts-page {
+    &__options {
+        width: 50%;
+    }
   }
 }

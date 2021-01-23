@@ -75,39 +75,36 @@
           </div>
 
           <!-- User Actions -->
-          <div class="col-lg-3 my-4 posts-page__nav__user-actions">
+          <div class="col-lg-4 my-4 posts-page__nav__user-actions">
             <!-- Notifications -->
             <a class="navbar-brand my-2" href="#" tabindex="-1" aria-disabled="true">
               <span class="badge rounded-pill bg-danger posts-page__notif-badge">4</span><i class="fas fa-bell"></i
             ></a>
-            <!-- User Options -->
-                <li class="navbar-nav nav-item dropdown navbar-brand">
-                  <a
-                    class="navbar-brand posts-page__user-dropdown-toggle"
-                    href="#"
-                    id="nav-bar__user-dark-dropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    ><i class="fas fa-bars"></i>&nbsp;User</a
-                  >
-                  <ul class="dropdown-menu my-2 dropdown-menu-dark" aria-labelledby="nav-bar__user-dark-dropdown">
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i>&nbsp;Edit Profile</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="fas fa-sliders-h"></i> &nbsp;Settings</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
-                    </li>
-                  </ul>
-                </li>
-
             <!-- Add a post -->
             <a class="navbar-brand my-2" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-plus"></i>&nbsp;Post</a>
-            <!-- Add a community -->
-            <a class="navbar-brand my-2" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-plus"></i>&nbsp;Community</a>
+            <!-- User Options -->
+            <li class="navbar-nav nav-item dropdown navbar-brand">
+              <a
+                class="navbar-brand posts-page__user-dropdown-toggle"
+                href="#"
+                id="nav-bar__user-dark-dropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fas fa-bars"></i>&nbsp;User</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="nav-bar__user-dark-dropdown">
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i>&nbsp;Edit Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> &nbsp;Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
+                </li>
+              </ul>
+            </li>
           </div>
         </div>
       </div>
@@ -116,13 +113,76 @@
       <div class="row posts-page__parallax-bg-container"></div>
 
       <!-- Tabs -->
-      <div class="row posts-page__tabs">
-        <!-- Filters & Options -->
-        <div class="row posts-page__filters"></div>
+      <div class="row p-4 posts-page__tabs flex-column flex-sm-row">
+        <nav class="col-lg-4 nav nav-pills">
+          <a class="nav-link active" aria-current="page" href="#">Trending</a>
+          <a class="nav-link" href="#">New</a>
+          <a class="nav-link" href="#">Most Viewed</a>
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Most Commented</a>
+        </nav>
+
+        <!-- Divider -->
+        <div class="row login-page__divider mt-3">
+          <hr />
+        </div>
+
+        <!-- Feed Options -->
+        <div class="row posts-page__options">
+          <!-- Icon -->
+          <div class="col-lg-1 my-2 posts-page__filters__icon"><i class="fas fa-sliders-h"></i></div>
+          <!-- Filters -->
+          <div class="col-lg-1 my-2 posts-page__filters__dropdown btn-group">
+            <button
+              type="posts-page__filters__button button"
+              class="btn btn-outline-light dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Filters
+            </button>
+            <ul class="posts-page__filters__dropdown-menu dropdown-menu">
+              <li><a class="dropdown-item" href="#">Uploaded this week</a></li>
+              <li><a class="dropdown-item" href="#">With atleast 1 comment</a></li>
+              <li><a class="dropdown-item" href="#">Archived</a></li>
+            </ul>
+          </div>
+          <!-- Tags -->
+          <div class="col-lg-1 my-2 posts-page__tags__dropdown btn-group">
+            <button
+              type="posts-page__tags__button button"
+              class="btn btn-outline-light dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Tags
+            </button>
+            <ul class="posts-page__tags__dropdown-menu dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"><span class="badge bg-warning">Easy Recipes</span> </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><span class="badge bg-success">Vegetarian</span> </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><span class="badge bg-primary">Exotic</span> </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Mature Content Slider -->
+          <div class="col-lg-1 my-2 mx-4 form-check form-switch">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Show Mature Content</label>
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+          </div>
+        </div>
       </div>
 
       <!-- Grid -->
-      <div class="row posts-page__grid"></div>
+      <div class="row px-4 posts-page__grid">
+        <!-- Divider -->
+        <div class="row login-page__divider">
+          <hr />
+        </div>
+      </div>
 
       <!-- Toasts Container -->
     </div>
