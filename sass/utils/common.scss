@@ -1,12 +1,13 @@
 // *** Global variables and Bootstrap overrides ***
-$selected-theme: "fresh";
+$selected-theme: "dark";
 $base-font-size: 1rem;
+$spacer: 1rem;
 $base-line-height: 1.25 * $base-font-size;
 
 // Color palette map.
 $theme-colors: (
-  "fresh": (
-    "primary": #5cdb95,
+  "dark": (
+    "primary": black,
     "background": #05386b,
     "text": #edf5e1,
     "secondary-text": #ddf4fa,
@@ -89,7 +90,7 @@ $text-settings: (
 }
 
 // Animate an element.
-@mixin animateProperty($property) {
+@mixin animateProperty($property: "all") {
   transition: $property 0.5s ease-in-out;
 }
 

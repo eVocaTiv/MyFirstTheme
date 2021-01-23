@@ -688,7 +688,7 @@
   line-height: 1.25rem; }
   .login-page__body {
     color: #edf5e1;
-    background: url(../img/login-bg.jpg) rgba(5, 56, 107, 0.6);
+    background: url(../../img/login-bg.jpg) rgba(5, 56, 107, 0.6);
     background-size: cover;
     background-blend-mode: color-burn; }
   .login-page__container {
@@ -704,6 +704,8 @@
   .login-page__submit {
     width: 100%;
     height: 3rem; }
+  .login-page__submit:hover {
+    background-color: #469ef6; }
   .login-page__alternative-logins--1, .login-page__alternative-logins--2 {
     width: 50%; }
   .login-page__alternative-logins--1:hover, .login-page__alternative-logins--2:hover {
@@ -717,5 +719,28 @@
   .login-page__container {
     width: 60%; } }
 
+.posts-page__body {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  background-color: black; }
+
+.posts-page__parallax-bg-container {
+  height: 30vh;
+  background-image: url(../../img/posts-bg-parallax.jpg);
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.posts-page__nav-container {
+  height: 10vh; }
+
+.posts-page__communities-dropdown-toggle {
+  color: white; }
+
+@media (min-width: 1400px) {
+  .posts-page .posts-page__nav-container {
+    height: 15vh; } }
+
 body {
-  height: 100vh; }
+  min-height: 100vh; }

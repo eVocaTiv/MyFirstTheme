@@ -6,12 +6,12 @@
 @import "../node_modules/bootstrap/scss/grid";
 
 // Local imports.
-@import "./home.scss";
-@import "./login.scss";
+@import "./pages/login";
+@import "./pages/posts";
 
 // ***Global styling rules ***
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 // Media Queries.

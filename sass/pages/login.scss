@@ -1,11 +1,13 @@
-@import "./utils/common.scss";
+@import "../utils/common.scss";
 
+// Login Page Styling.
 .login-page {
   @include text-setting("xs");
 
   &__body {
     color: theme-text-color($selected-theme);
-    background: url(../img/login-bg.jpg) rgba(theme-background-color($selected-theme), 0.6);
+    // Put background image here
+    background: url(../../img/login-bg.jpg) rgba(theme-background-color($selected-theme), 0.6);
     background-size: cover;
     background-blend-mode: color-burn;
   }
@@ -32,6 +34,10 @@
   &__submit {
     width: 100%;
     height: $spacer * 3;
+  }
+
+  &__submit:hover {
+    background-color: lighten(theme-background-color($selected-theme), 40);
   }
 
   &__alternative-logins--1,
