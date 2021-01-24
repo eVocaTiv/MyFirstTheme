@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+
+    <!-- CSS files-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- TODO: Enable styled pointer later -->
+    <!-- <link rel="stylesheet" href="css/pointer.css" /> -->
+
+    <!-- PRE SCRIPTS -->
+    <!-- 1. Font Awesome -->
+    <script src="https://kit.fontawesome.com/193264d773.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body class="post-details-page__body">
+    <div class="container-fluid post-details-page__container">
+        <!-- Navigation Bar -->
+        <div class="row common__nav-container">
+            <div class="row gy-1 m-0 navbar navbar-expand-lg navbar-dark bg-dark common__nav">
+                <div class="col-1"></div>
+                <!-- Brand Logo -->
+                <div class="col-lg-1 common__nav__logo">
+                    <a class="navbar-brand" href="/posts.html"><i class="fas fa-gem"></i></a>
+                </div>
+                <!-- Communities -->
+                <div class="col-lg-2 mb-2 common__nav__search-communities">
+                    <div class="navbar-collapse" id="nav-bar__communities-dark-dropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown navbar-brand">
+                                <a class="nav-link dropdown-toggle common__communities-dropdown-toggle" href="#"
+                                    id="nav-bar__communities-dark-dropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Communities</a>
+                                <ul class="dropdown-menu dropdown-menu-dark"
+                                    aria-labelledby="nav-bar__communities-dark-dropdown">
+                                    <li><a class="dropdown-item" href="#">Movies</a></li>
+                                    <li><a class="dropdown-item" href="#">Politics</a></li>
+                                    <li><a class="dropdown-item" href="#">Nature</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li class="p-3">Your Communities</li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                                    <li><a class="dropdown-item" href="#">Food</a></li>
+                                    <li><a class="dropdown-item" href="#">Music</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Search Posts -->
+                <div class="col-lg-4 common__nav__search">
+                    <form class="d-flex">
+                        <input class="form-control me-2 common__nav__search-input" type="search"
+                            placeholder="Search Posts..." aria-label="Search" />
+                        <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- User Actions -->
+                <div class="col-lg-4 my-4 common__nav__user-actions">
+                    <!-- Notifications -->
+                    <a class="navbar-brand my-2" href="#" tabindex="-1" aria-disabled="true">
+                        <span class="badge rounded-pill bg-danger common__notif-badge">4</span><i
+                            class="fas fa-bell"></i></a>
+                    <!-- Add a post -->
+                    <a class="navbar-brand my-2" href="#" tabindex="-1" aria-disabled="true"><i
+                            class="fas fa-plus"></i>&nbsp;Post</a>
+                    <!-- User Options -->
+                    <li class="navbar-nav nav-item dropdown navbar-brand">
+                        <a class="navbar-brand common__user-dropdown-toggle" href="#" id="nav-bar__user-dark-dropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                class="fas fa-bars"></i>&nbsp;User</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="nav-bar__user-dark-dropdown">
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i>&nbsp;Edit
+                                    Profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> &nbsp;Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post Options -->
+        <div class="row mt-4 post-details-page__options">
+            <div class="col-lg-2 col-1"></div>
+            <div class="col-lg-1 col-2 align-self-center post-details-page__back-link">
+                <a href="/posts.html" class="mx-lg-1 my-4 link-text"><i class="fas fa-chevron-left fa-2x"></i></a>
+            </div>
+            <!-- Sort -->
+            <div class="col-lg-1 col-7 mx-lg-1 my-2 post-details-page__sort__dropdown btn-group">
+                <button type="post-details-page__sort__button button" class="btn btn-outline-light dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort comments by
+                </button>
+                <ul class="post-details-page__tags__dropdown-menu dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#">Likes</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Time of upload</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Relevance</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Posts/Comments -->
+        <div class="row mt-4 px-sm-4 post-details-page__post-details-container">
+
+            <!-- Author's Post-->
+            <div class="row p-2 post-details-page__post">
+                <!-- Metrics - Likes, Views and comments -->
+                <div class="col-lg-1 post-details-page__post__content--empty-col"></div>
+                <div class="col-2 mt-3 align-self-center post-details-page__post__metrics">
+                    <ul style="list-style-type:none; text-align: center;">
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 liked fas fa-thumbs-up fa-2x"></i> 40
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 liked fas fa-thumbs-up fa-lg"></i>
+                            40
+                        </li>
+                        <li class="d-md-none"><i class="liked fas fa-thumbs-up fa-sm"></i> 40
+                        </li>
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-eye fa-2x"></i> 50
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-eye fa-lg"></i> 50
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-eye fa-sm"></i> 50
+                        </li>
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-comment-dots fa-2x"></i> 19
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-comment-dots fa-lg"></i> 19
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-comment-dots fa-sm"></i> 19
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-md-9 col-10">
+                    <div class="row post-details-page__post__content--secondary__actions--container">
+                        <div class="col-4">
+                            <span class="col-1">John posted 2 days ago</span>
+                            <a class="px-2 post-details-page__post__content--secondary__actions" href="#">Watch
+                                thread</a>
+                        </div>
+                    </div>
+                    <div class="row p-4 post-details-page__post__content--author post-details-page__post__content">
+                        <div class="d-none d-md-block col-md-2 post-details-page__post__content--primary">
+                            <img src="img/post-img-1.jpg" class="img-thumbnail post-details-page__post__content__image"
+                                alt="Post Description Image">
+                            <span class="badge bg-success">Easy Recipes</span>
+                            <span class="badge bg-info">10 Ingredients</span>
+                        </div>
+
+                        <div class="col-md-10 col-12 post-details-page__post__content--secondary">
+                            How do you make a fresh deep dish pizza in an hour? So I was trying to get a quick cooking
+                            dough, but my local store does not have them. Interested to see how you guys make a deep
+                            dish
+                            pizza! Please let me know your thoughts below :)
+                            <br /> <br />
+                            <i class="fas fa-circle fa-xs"></i> <a
+                                class="post-details-page__post__content--secondary__actions" href="#">Share</a> &nbsp;
+                            <a class="post-details-page__post__content--secondary__actions" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 post-details-page__post__content--tertiary"></div>
+                <div class="col-1 post-details-page__post__content--tertiary"></div>
+            </div>
+
+            <!-- Divider -->
+            <div class="row post-details-page__divider mt-5">
+                <div class="col">
+                    <hr />
+                </div>
+                <div class="col-auto post-details-page__divider__text">Comments</div>
+                <div class="col">
+                    <hr />
+                </div>
+            </div>
+
+
+            <!-- Reply Post 1 -->
+            <div class="row p-2 post-details-page__post">
+                <div class="col-lg-1 post-details-page__post__content--empty-col"></div>
+                <!-- Likes & Dislikes -->
+                <div class="col-2 mt-3 align-self-center post-details-page__post__metrics">
+                    <ul style="list-style-type:none; text-align: center;">
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i> 40
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i> 40
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-thumbs-up fa-sm"></i> 40
+                        </li>
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-down fa-2x"></i> 15
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-down fa-lg"></i> 15
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-thumbs-down fa-sm"></i> 15
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-md-9 col-10">
+                    <div class="row post-details-page__post__content--secondary__actions--container">
+                        <div class="col-4">
+                            <span class="col-1">Kate</span> -
+                            <span class="col-1">15 mins ago</span>
+                        </div>
+                    </div>
+                    <div class="row p-4 post-details-page__post__content">
+                        <div class="d-none d-md-block col-md-2 post-details-page__post__content--primary">
+                            <img src="img/post-img-2.jpg" class="img-thumbnail post-details-page__post__content__image"
+                                alt="Post Description Image">
+                            <span class="badge bg-success">Easy Recipes</span>
+                            <span class="badge bg-info">10 Ingredients</span>
+                        </div>
+
+                        <div class="col-md-10 col-12 post-details-page__post__content--secondary">
+                            How do you make a fresh deep dish pizza in under an hour?
+                            <br /> <br />
+                            <i class="fas fa-circle fa-xs"></i> <a
+                                class="post-details-page__post__content--secondary__actions" href="#">Share</a> &nbsp;
+                            <a class="post-details-page__post__content--secondary__actions" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 post-details-page__post__content--tertiary"></div>
+                <div class="col-1 post-details-page__post__content--tertiary"></div>
+            </div>
+
+            <!-- Reply Post 2 -->
+            <div class="row p-2 post-details-page__post">
+                <div class="col-lg-1 post-details-page__post__content--empty-col"></div>
+                <!-- Likes & Dislikes -->
+                <div class="col-2 mt-3 align-self-center post-details-page__post__metrics">
+                    <ul style="list-style-type:none; text-align: center;">
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i> 40
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i> 40
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-thumbs-up fa-sm"></i> 40
+                        </li>
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 disliked fas fa-thumbs-down fa-2x"></i> 15
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i
+                                class="py-1 px-1 disliked fas fa-thumbs-down fa-lg"></i>
+                            15
+                        </li>
+                        <li class="d-md-none"><i class="disliked fas fa-thumbs-down fa-sm"></i> 15
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-md-9 col-10">
+                    <div class="row post-details-page__post__content--secondary__actions--container">
+                        <div class="col-4">
+                            <span class="col-1">George</span>-
+                            <span class="col-1">1 hr ago</span>
+                        </div>
+                    </div>
+                    <div class="row p-4 post-details-page__post__content">
+                        <div class="d-none d-md-block col-md-2 post-details-page__post__content--primary">
+                            <img src="img/post-img-3.jpg" class="img-thumbnail post-details-page__post__content__image"
+                                alt="Post Description Image">
+                            <span class="badge bg-success">Easy Recipes</span>
+                            <span class="badge bg-info">10 Ingredients</span>
+                        </div>
+
+                        <div class="col-md-10 col-12 post-details-page__post__content--secondary">
+                            How do you make a fresh deep dish pizza in under an hour?
+                            <br /> <br />
+                            <i class="fas fa-circle fa-xs"></i> <a
+                                class="post-details-page__post__content--secondary__actions" href="#">Share</a> &nbsp;
+                            <a class="post-details-page__post__content--secondary__actions" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 post-details-page__post__content--tertiary"></div>
+                <div class="col-1 post-details-page__post__content--tertiary"></div>
+            </div>
+
+            <!-- Reply Post 3 -->
+            <div class="row p-2 post-details-page__post">
+                <div class="col-lg-1 post-details-page__post__content--empty-col"></div>
+                <!-- Likes & Dislikes -->
+                <div class="col-2 mt-3 align-self-center post-details-page__post__metrics">
+                    <ul style="list-style-type:none; text-align: center;">
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i> 40
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i> 40
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-thumbs-up fa-sm"></i> 40
+                        </li>
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-down fa-2x"></i> 15
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-down fa-lg"></i> 15
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-thumbs-down fa-sm"></i> 15
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-md-9 col-10">
+                    <div class="row post-details-page__post__content--secondary__actions--container">
+                        <div class="col-4">
+                            <span class="col-1">Amanda</span>-
+                            <span class="col-1">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="row p-4 post-details-page__post__content">
+                        <div class="d-none d-md-block col-md-2 post-details-page__post__content--primary">
+                            <img src="img/post-img-4.jpg" class="img-thumbnail post-details-page__post__content__image"
+                                alt="Post Description Image">
+                            <span class="badge bg-success">Easy Recipes</span>
+                            <span class="badge bg-info">10 Ingredients</span>
+                        </div>
+
+                        <div class="col-md-10 col-12 post-details-page__post__content--secondary">
+                            How do you make a fresh deep dish pizza in under an hour?
+                            <br /> <br />
+                            <i class="fas fa-circle fa-xs"></i> <a
+                                class="post-details-page__post__content--secondary__actions" href="#">Share</a> &nbsp;
+                            <a class="post-details-page__post__content--secondary__actions" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 post-details-page__post__content--tertiary"></div>
+                <div class="col-1 post-details-page__post__content--tertiary"></div>
+            </div>
+
+            <!-- Reply Post 4 -->
+            <div class="row p-2 post-details-page__post">
+                <div class="col-lg-1 post-details-page__post__content--empty-col"></div>
+                <!-- Likes & Dislikes -->
+                <div class="col-2 mt-3 align-self-center post-details-page__post__metrics">
+                    <ul style="list-style-type:none; text-align: center;">
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i> 40
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i> 40
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-thumbs-up fa-sm"></i> 40
+                        </li>
+                        <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-down fa-2x"></i> 15
+                        </li>
+                        <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-down fa-lg"></i> 15
+                        </li>
+                        <li class="d-md-none"><i class="fas fa-thumbs-down fa-sm"></i> 15
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-md-9 col-10">
+                    <div class="row post-details-page__post__content--secondary__actions--container">
+                        <div class="col-4">
+                            <span class="col-1">Jim</span>-
+                            <span class="col-1">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="row p-4 post-details-page__post__content">
+                        <div class="d-none d-md-block col-md-2 post-details-page__post__content--primary">
+                            <img src="img/post-bg-body.jpg"
+                                class="img-thumbnail post-details-page__post__content__image"
+                                alt="Post Description Image">
+                            <span class="badge bg-success">Easy Recipes</span>
+                            <span class="badge bg-info">10 Ingredients</span>
+                        </div>
+
+                        <div class="col-md-10 col-12 post-details-page__post__content--secondary">
+                            How do you make a fresh deep dish pizza in under an hour?
+                            <br /> <br />
+                            <i class="fas fa-circle fa-xs"></i> <a
+                                class="post-details-page__post__content--secondary__actions" href="#">Share</a> &nbsp;
+                            <a class="post-details-page__post__content--secondary__actions" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 post-details-page__post__content--tertiary"></div>
+                <div class="col-1 post-details-page__post__content--tertiary"></div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="row mx-1 my-5 justify-content-center">
+                <a href="#" class="link-text post-details-page__view-more">View more...</a>
+            </div>
+            <!-- Posts Container Ends -->
+        </div>
+
+        <!-- Footer -->
+        <div class="row common__footer-container">
+            <div class="row m-0 navbar navbar-expand-lg navbar-dark bg-dark common__footer">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 py-3 align-self-start"><i class="fas fa-gem"></i></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2 py-3 align-self-center">Dewan Designs</div>
+                <div class="col-md-2"></div>
+                <div class="col-md-3 py-3 align-self-end">Contact us&nbsp;&nbsp;
+                    <i class="fas fa-envelope-square"></i>&nbsp;
+                    <i class="fab fa-google"></i>&nbsp;
+                    <i class="fab fa-facebook"></i>&nbsp;
+                </div>
+            </div>
+        </div>
+
+        <!-- POST SCRIPTS -->
+        <!-- 1. jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+            integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

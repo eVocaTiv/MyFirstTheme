@@ -85,7 +85,8 @@
   box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2); }
   .posts-page__post__content--secondary {
     font-size: 1.125rem;
-    line-height: 2.5rem; }
+    line-height: 1.875rem;
+    text-align: justify; }
     .posts-page__post__content--secondary__link {
       color: #edf5e1;
       text-decoration: none; }
@@ -124,6 +125,98 @@
 
 @media (max-width: 575.98px) {
   .posts-page__post__metrics > ul {
+    font-size: 0.5rem;
+    line-height: 1.25rem; } }
+
+/** This file contains styling for the Post Details page (post-details.html) **/
+/** This file contains common variables, utility functions and mixins**/
+.post-details-page__body {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  background: url(../../img/post-bg-body.jpg) rgba(33, 37, 41, 0.9);
+  background-blend-mode: multiply;
+  background-size: cover; }
+
+.post-details-page__options {
+  color: #edf5e1; }
+
+.post-details-page__filters__button, .post-details-page__tags__button, .post-details-page__sort__button {
+  color: #edf5e1; }
+
+.post-details-page__filters__dropdown > button, .post-details-page__filters__dropdown-menu, .post-details-page__tags__dropdown > button, .post-details-page__tags__dropdown-menu, .post-details-page__sort__dropdown > button, .post-details-page__sort__dropdown-menu {
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
+
+.post-details-page__filters__icon {
+  align-self: center;
+  text-align: center; }
+
+.post-details-page__divider__text {
+  font-size: 1.125rem;
+  line-height: 1.875rem; }
+
+.post-details-page__post__metrics > ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
+
+.post-details-page__post__metrics .fa-thumbs-up,
+.post-details-page__post__metrics .fa-thumbs-down {
+  cursor: pointer; }
+
+.post-details-page__post__metrics .liked {
+  color: #0d63fd; }
+
+.post-details-page__post__metrics .disliked {
+  color: #dc3545; }
+
+.post-details-page__post__content {
+  border-radius: 40px;
+  background-color: rgba(67, 75, 83, 0.8);
+  box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2); }
+  .post-details-page__post__content--author {
+    background-color: rgba(33, 37, 41, 0.8); }
+  .post-details-page__post__content--secondary {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: justify; }
+    .post-details-page__post__content--secondary__link {
+      color: #edf5e1;
+      text-decoration: none; }
+    .post-details-page__post__content--secondary__link:hover {
+      color: #ddf4fa; }
+    .post-details-page__post__content--secondary__actions-container {
+      text-align: center; }
+    .post-details-page__post__content--secondary__actions {
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      text-decoration: none;
+      color: #edf5e1; }
+      .post-details-page__post__content--secondary__actions--container {
+        white-space: nowrap; }
+    .post-details-page__post__content--secondary__actions:hover {
+      color: #ddf4fa; }
+
+.post-details-page__post__image {
+  width: 100px; }
+
+.post-details-page__view-more {
+  text-align: center; }
+
+@media (max-width: 1199.98px) {
+  .post-details-page__post__content--secondary {
+    font-size: 0.75rem;
+    line-height: 1.25rem; } }
+
+@media (max-width: 991.98px) {
+  .post-details-page__post__content--secondary__actions {
+    font-size: 0.5rem;
+    line-height: 1.25rem; } }
+
+@media (max-width: 575.98px) {
+  .post-details-page__post__metrics > ul {
     font-size: 0.5rem;
     line-height: 1.25rem; } }
 
@@ -938,12 +1031,19 @@ body {
 .common__nav__user-actions, .common__nav__search-communities, .common__nav__logo {
   text-align: center; }
 
+.common__nav__search input {
+  border-radius: 10px; }
+
+.common__nav__search input:focus {
+  border-color: #0d63fd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 99, 253, 0.25); }
+
 .common__footer-container {
   text-align: center; }
 
 .common__footer {
   background-color: #212529;
-  height: 5vh; }
+  height: 7.5vh; }
 
 .nav-link,
 .link-text {

@@ -1,8 +1,9 @@
 /** This file contains common styling, and imports all the stylesheets into 1 file**/
 
-// Local imports.
+// Local imports for all pages.
 @import "./pages/login.scss";
 @import "./pages/posts.scss";
+@import "./pages/post-details.scss";
 
 // Optional Bootstrap imports.
 @import "../node_modules/bootstrap/scss/grid";
@@ -17,19 +18,27 @@ body {
 
 // Common components styling.
 .common {
-  // Page Header - used in pages like Posts (posts.html)
+  // Page Header - used in pages like Posts (posts.html), Post Details (post-details.html)
   &__nav__user-actions,
   &__nav__search-communities,
   &__nav__logo {
     @include center-text();
   }
-  // Page Footer - used in pages like Posts (posts.html)
+  // Search input
+  &__nav__search input {
+    border-radius: 10px;
+  }
+  &__nav__search input:focus {
+    border-color: theme-primary-color($selected-theme);
+    box-shadow: 0 0 0 0.25rem rgba(theme-primary-color($selected-theme), 0.25);
+  }
+  // Page Footer - used in pages like Posts (posts.html), Post Details (post-details.html)
   &__footer-container {
     @include center-text();
   }
   &__footer {
     background-color: theme-secondary-background-color($selected-theme);
-    height: 5vh;
+    height: 7.5vh;
   }
 }
 
@@ -60,7 +69,6 @@ body {
     }
   }
 }
-
 
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {
