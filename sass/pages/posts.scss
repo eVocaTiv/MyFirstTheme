@@ -47,7 +47,6 @@
     }
   }
 
-
   &__filters {
     &__icon {
       align-self: center;
@@ -65,7 +64,7 @@
     &__content {
       @include animateProperty(transform);
       border-radius: 40px;
-      background-color: theme-secondary-background-color($selected-theme);
+      background-color: rgba(theme-secondary-background-color($selected-theme), 0.8);
       box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
 
       &--secondary {
@@ -95,18 +94,9 @@
     }
   }
 
-  // TODO: Pagination
-
-  // &__pagination__item {
-  //   background-color: theme-background-color($selected-theme);
-  //   > a {
-  //     color: theme-primary-color($selected-theme);
-  //     background-color: theme-background-color($selected-theme);
-  //   }
-  // }
-  // &__pagination__item.active > a {
-  //   background-color: theme-text-color($selected-theme);
-  // }
+  &__view-more {
+    @include center-text();
+  }
 }
 
 // Media Queries.

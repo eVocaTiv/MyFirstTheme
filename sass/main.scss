@@ -1,7 +1,7 @@
 /** This file contains common styling, and imports all the stylesheets into 1 file**/
 
-// Local imports. 
-@import "./pages/login.scss"; 
+// Local imports.
+@import "./pages/login.scss";
 @import "./pages/posts.scss";
 
 // Optional Bootstrap imports.
@@ -15,22 +15,35 @@ body {
 
 // Overrides
 
-// Common navbar styling.
+// Common components styling.
 .common {
+  // Page Header - used in pages like Posts (posts.html)
   &__nav__user-actions,
   &__nav__search-communities,
   &__nav__logo {
     @include center-text();
   }
+  // Page Footer - used in pages like Posts (posts.html)
+  &__footer-container {
+    @include center-text();
+  }
+  &__footer {
+    background-color: theme-secondary-background-color($selected-theme);
+    height: 5vh;
+  }
 }
 
 // Bootstrap nav overrides.
-.nav-link {
+.nav-link,
+.link-text {
   color: theme-text-color($selected-theme);
+  text-decoration: none;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.link-text:hover {
   color: theme-secondary-text-color($selected-theme);
+  cursor: pointer;
 }
 
 .navbar-nav {
@@ -38,6 +51,17 @@ body {
 }
 
 // Media Queries.
+
+// 768px and below
+@include media-breakpoint-down(sm) {
+  .common {
+    &__footer {
+      height: 20vh;
+    }
+  }
+}
+
+
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {
 }

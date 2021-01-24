@@ -1,25 +1,19 @@
 /** This file contains common variables, utility functions and mixins**/
 
 // *** Global variables and Bootstrap overrides ***
-$selected-theme: "dark";
+$selected-theme: "default";
 $base-font-size: 1rem;
 $spacer: 1rem;
 $base-line-height: 1.25 * $base-font-size;
 
 // Color palette map.
+// Extend color palette here.
 $theme-colors: (
-  "dark": (
+  "default": (
     "primary": #0d63fd,
     "background": #05386b,
     "text": #edf5e1,
     "secondary-text": #ddf4fa,
-    "secondary-background": #212529,
-  ),
-  "dull": (
-    "primary": #2e1114,
-    "background": #6b0505,
-    "text": #adadad,
-    "secondary-text": #c9ecf5,
     "secondary-background": #212529,
   ),
 );
