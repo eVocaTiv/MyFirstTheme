@@ -198,6 +198,15 @@
         white-space: nowrap; }
     .post-details-page__post__content--secondary__actions:hover {
       color: #ddf4fa; }
+  .post-details-page__post__content--secondary textarea {
+    color: #edf5e1;
+    background-color: #212529; }
+  .post-details-page__post__content--secondary textarea:focus {
+    color: #edf5e1;
+    background-color: #212529; }
+  .post-details-page__post__content--publish button {
+    font-size: 0.75rem;
+    line-height: 1.25rem; }
 
 .post-details-page__post__image {
   width: 100px; }

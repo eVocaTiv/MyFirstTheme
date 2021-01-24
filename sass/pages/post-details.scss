@@ -93,6 +93,17 @@
           color: theme-secondary-text-color($selected-theme);
         }
       }
+      &--secondary textarea {
+        color: theme-text-color($selected-theme);
+        background-color: theme-secondary-background-color($selected-theme);
+      }
+      &--secondary textarea:focus {
+        color: theme-text-color($selected-theme);
+        background-color: theme-secondary-background-color($selected-theme);
+      }
+      &--publish button {
+        @include text-setting("xs");
+      }
     }
     &__image {
       width: 100px;
