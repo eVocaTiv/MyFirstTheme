@@ -22,19 +22,19 @@
 <body class="posts-page__body">
   <div class="container-fluid posts-page__container">
     <!-- Navigation Bar -->
-    <div class="row posts-page__nav-container">
-      <div class="row gy-1 m-0 navbar navbar-expand-lg navbar-dark bg-dark posts-page__nav">
+    <div class="row common__nav-container">
+      <div class="row gy-1 m-0 navbar navbar-expand-lg navbar-dark bg-dark common__nav">
         <div class="col-1"></div>
         <!-- Brand Logo -->
-        <div class="col-lg-1 posts-page__nav__logo">
+        <div class="col-lg-1 common__nav__logo">
           <a class="navbar-brand" href="#"><i class="fas fa-gem"></i></a>
         </div>
         <!-- Communities -->
-        <div class="col-lg-2 mb-2 posts-page__nav__search-communities">
+        <div class="col-lg-2 mb-2 common__nav__search-communities">
           <div class="navbar-collapse" id="nav-bar__communities-dark-dropdown">
             <ul class="navbar-nav">
               <li class="nav-item dropdown navbar-brand">
-                <a class="nav-link dropdown-toggle posts-page__communities-dropdown-toggle" href="#"
+                <a class="nav-link dropdown-toggle common__communities-dropdown-toggle" href="#"
                   id="nav-bar__communities-dark-dropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">Communities</a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="nav-bar__communities-dark-dropdown">
@@ -58,25 +58,25 @@
         </div>
 
         <!-- Search Posts -->
-        <div class="col-lg-4 posts-page__nav__search">
+        <div class="col-lg-4 common__nav__search">
           <form class="d-flex">
-            <input class="form-control me-2 posts-page__nav__search-input" type="search" placeholder="Search Posts..."
+            <input class="form-control me-2 common__nav__search-input" type="search" placeholder="Search Posts..."
               aria-label="Search" />
             <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
 
         <!-- User Actions -->
-        <div class="col-lg-4 my-4 posts-page__nav__user-actions">
+        <div class="col-lg-4 my-4 common__nav__user-actions">
           <!-- Notifications -->
           <a class="navbar-brand my-2" href="#" tabindex="-1" aria-disabled="true">
-            <span class="badge rounded-pill bg-danger posts-page__notif-badge">4</span><i class="fas fa-bell"></i></a>
+            <span class="badge rounded-pill bg-danger common__notif-badge">4</span><i class="fas fa-bell"></i></a>
           <!-- Add a post -->
           <a class="navbar-brand my-2" href="#" tabindex="-1" aria-disabled="true"><i
               class="fas fa-plus"></i>&nbsp;Post</a>
           <!-- User Options -->
           <li class="navbar-nav nav-item dropdown navbar-brand">
-            <a class="navbar-brand posts-page__user-dropdown-toggle" href="#" id="nav-bar__user-dark-dropdown"
+            <a class="navbar-brand common__user-dropdown-toggle" href="#" id="nav-bar__user-dark-dropdown"
               role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bars"></i>&nbsp;User</a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="nav-bar__user-dark-dropdown">
               <li>
@@ -108,7 +108,6 @@
         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Most Commented</a>
         <!-- </div> -->
       </nav>
-      <div class="col-lg-3"></div>
 
       <!-- Divider -->
       <div class="row posts-page__divider mt-3">
@@ -121,7 +120,7 @@
         <!-- Icon -->
         <div class="col-lg-1 my-2 posts-page__filters__icon"><i class="fas fa-sliders-h"></i></div>
         <!-- Sort -->
-        <div class="col-lg-1 my-2 posts-page__sort__dropdown btn-group">
+        <div class="col-lg-1 mx-lg-1 my-2 posts-page__sort__dropdown btn-group">
           <button type="posts-page__sort__button button" class="btn btn-outline-light dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
             Sort by
@@ -139,7 +138,7 @@
           </ul>
         </div>
         <!-- Filters -->
-        <div class="col-lg-1 mx-1 my-2 posts-page__filters__dropdown btn-group">
+        <div class="col-lg-1 mx-lg-1 my-2 posts-page__filters__dropdown btn-group">
           <button type="posts-page__filters__button button" class="btn btn-outline-light dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
             Filters
@@ -151,7 +150,7 @@
           </ul>
         </div>
         <!-- Tags -->
-        <div class="col-lg-1 mx-1 my-2 posts-page__tags__dropdown btn-group">
+        <div class="col-lg-1 mx-lg-1 my-2 posts-page__tags__dropdown btn-group">
           <button type="posts-page__tags__button button" class="btn btn-outline-light dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
             Tags
@@ -169,7 +168,7 @@
           </ul>
         </div>
         <!-- Mature Content Slider -->
-        <div class="col-lg-1 my-2 mx-4 posts-page__mature-check form-check form-switch">
+        <div class="col-lg-1 my-2 mx-4 align-self-center posts-page__mature-check form-check form-switch">
           <label class="form-check-label" for="mature-content-switch">Mature Content</label>
           <input class="form-check-input" type="checkbox" id="mature-content-switch" checked />
         </div>
@@ -221,7 +220,7 @@
             </div>
 
             <div class="col-10 posts-page__post__content--secondary">
-              How do you make a fresh deep dish pizza in under an hour?
+              <a class="posts-page__post__content--secondary__link" href="#">How do you make a fresh deep dish pizza in under an hour?</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
               - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
@@ -271,14 +270,14 @@
           </div>
           <div class="row p-4 posts-page__post__content">
             <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
-              <img src="img/post-img-1.jpg" class="img-thumbnail posts-page__post__content__image"
+              <img src="img/post-img-2.jpg" class="img-thumbnail posts-page__post__content__image"
                 alt="Post Description Image">
               <span class="badge bg-success">Easy Recipes</span>
               <span class="badge bg-info">10 Ingredients</span>
             </div>
 
             <div class="col-10 posts-page__post__content--secondary">
-              How do you make a fresh deep dish pizza in under an hour?
+              <a class="posts-page__post__content--secondary__link" href="#">How do you make a fresh deep dish pizza in under an hour?</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
               - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
@@ -329,14 +328,14 @@
           </div>
           <div class="row p-4 posts-page__post__content">
             <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
-              <img src="img/post-img-1.jpg" class="img-thumbnail posts-page__post__content__image"
+              <img src="img/post-img-3.jpg" class="img-thumbnail posts-page__post__content__image"
                 alt="Post Description Image">
               <span class="badge bg-success">Easy Recipes</span>
               <span class="badge bg-info">10 Ingredients</span>
             </div>
 
             <div class="col-10 posts-page__post__content--secondary">
-              How do you make a fresh deep dish pizza in under an hour?
+              <a class="posts-page__post__content--secondary__link" href="#">How do you make a fresh deep dish pizza in under an hour?</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
               - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
@@ -386,14 +385,14 @@
           </div>
           <div class="row p-4 posts-page__post__content">
             <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
-              <img src="img/post-img-1.jpg" class="img-thumbnail posts-page__post__content__image"
+              <img src="img/post-img-4.jpg" class="img-thumbnail posts-page__post__content__image"
                 alt="Post Description Image">
               <span class="badge bg-success">Easy Recipes</span>
               <span class="badge bg-info">10 Ingredients</span>
             </div>
 
             <div class="col-10 posts-page__post__content--secondary">
-              How do you make a fresh deep dish pizza in under an hour?
+              <a class="posts-page__post__content--secondary__link" href="#">How do you make a fresh deep dish pizza in under an hour?</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
               - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>

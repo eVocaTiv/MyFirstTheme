@@ -1,3 +1,5 @@
+/** This file contains styling for the Posts page (posts.html) **/
+
 @import "../utils/common.scss";
 
 // Bootstrap imports.
@@ -9,7 +11,9 @@
 .posts-page {
   &__body {
     @include text-setting("xs");
-    background-color: black;
+    background: url(../../img/post-bg-body.jpg) rgba(theme-secondary-background-color($selected-theme), 0.9);
+    background-size: cover;
+    background-blend-mode: multiply;
   }
 
   &__parallax-bg-container {
@@ -21,12 +25,6 @@
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  &__nav__user-actions,
-  &__nav__search-communities,
-  &__nav__logo {
-    @include center-text();
   }
 
   &__tabs {
@@ -72,6 +70,13 @@
 
       &--secondary {
         @include text-setting("md");
+        &__link {
+          color: theme-text-color($selected-theme);
+          text-decoration: none;
+        }
+        &__link:hover {
+          color: theme-secondary-text-color($selected-theme);
+        }
         &__actions {
           @include text-setting("xs");
           text-decoration: none;

@@ -1,3 +1,5 @@
+/** This file contains common styling, and imports all the stylesheets into 1 file**/
+
 // Local imports. 
 @import "./pages/login.scss"; 
 @import "./pages/posts.scss";
@@ -13,7 +15,16 @@ body {
 
 // Overrides
 
-// Default nav-link styling.
+// Common navbar styling.
+.common {
+  &__nav__user-actions,
+  &__nav__search-communities,
+  &__nav__logo {
+    @include center-text();
+  }
+}
+
+// Bootstrap nav overrides.
 .nav-link {
   color: theme-text-color($selected-theme);
 }
@@ -22,11 +33,9 @@ body {
   color: theme-secondary-text-color($selected-theme);
 }
 
-// Keep navbar-nav inline.
 .navbar-nav {
   display: inline;
 }
-
 
 // Media Queries.
 // Small devices (landscape phones, 576px and up)

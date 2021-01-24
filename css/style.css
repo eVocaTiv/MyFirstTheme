@@ -1,3 +1,6 @@
+/** This file contains common styling, and imports all the stylesheets into 1 file**/
+/** This file contains styling for the Login page (login.html) **/
+/** This file contains common variables, utility functions and mixins**/
 .login-page {
   font-size: 0.75rem;
   line-height: 1.25rem; }
@@ -34,10 +37,14 @@
   .login-page__container {
     width: 70% !important; } }
 
+/** This file contains styling for the Posts page (posts.html) **/
+/** This file contains common variables, utility functions and mixins**/
 .posts-page__body {
   font-size: 0.75rem;
   line-height: 1.25rem;
-  background-color: black; }
+  background: url(../../img/post-bg-body.jpg) rgba(33, 37, 41, 0.9);
+  background-size: cover;
+  background-blend-mode: multiply; }
 
 .posts-page__parallax-bg-container {
   height: 30vh;
@@ -46,9 +53,6 @@
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.posts-page__nav__user-actions, .posts-page__nav__search-communities, .posts-page__nav__logo {
-  text-align: center; }
 
 .posts-page__tabs {
   background-color: #212529; }
@@ -82,6 +86,11 @@
   .posts-page__post__content--secondary {
     font-size: 1.125rem;
     line-height: 2.5rem; }
+    .posts-page__post__content--secondary__link {
+      color: #edf5e1;
+      text-decoration: none; }
+    .posts-page__post__content--secondary__link:hover {
+      color: #ddf4fa; }
     .posts-page__post__content--secondary__actions {
       font-size: 0.75rem;
       line-height: 1.25rem;
@@ -922,6 +931,9 @@
 body {
   min-height: 100vh;
   color: #edf5e1; }
+
+.common__nav__user-actions, .common__nav__search-communities, .common__nav__logo {
+  text-align: center; }
 
 .nav-link {
   color: #edf5e1; }
