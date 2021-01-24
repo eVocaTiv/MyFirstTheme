@@ -37,7 +37,7 @@
 .posts-page__body {
   font-size: 0.75rem;
   line-height: 1.25rem;
-  background-color: #141F33; }
+  background-color: black; }
 
 .posts-page__parallax-bg-container {
   height: 30vh;
@@ -49,6 +49,9 @@
 
 .posts-page__nav__user-actions, .posts-page__nav__search-communities, .posts-page__nav__logo {
   text-align: center; }
+
+.posts-page__tabs {
+  background-color: #212529; }
 
 .posts-page__options {
   color: #edf5e1; }
@@ -63,6 +66,54 @@
 .posts-page__filters__icon {
   align-self: center;
   text-align: center; }
+
+.posts-page__post__metrics > ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
+
+.posts-page__post__content {
+  transition: transform 0.5s ease-in-out;
+  border-radius: 40px;
+  background-color: #212529;
+  box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2); }
+  .posts-page__post__content--secondary {
+    font-size: 1.125rem;
+    line-height: 2.5rem; }
+    .posts-page__post__content--secondary__actions {
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      text-decoration: none;
+      color: #edf5e1; }
+      .posts-page__post__content--secondary__actions--container {
+        white-space: nowrap; }
+    .posts-page__post__content--secondary__actions:hover {
+      color: #ddf4fa; }
+
+.posts-page__post__image {
+  width: 100px; }
+
+@media (min-width: 768px) {
+  .posts-page__post__content:hover {
+    box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.8);
+    transform: translateX(0.5rem); } }
+
+@media (max-width: 1199.98px) {
+  .posts-page__post__content--secondary {
+    font-size: 0.75rem;
+    line-height: 1.25rem; } }
+
+@media (max-width: 991.98px) {
+  .posts-page__post__content--secondary__actions {
+    font-size: 0.5rem;
+    line-height: 1.25rem; } }
+
+@media (max-width: 575.98px) {
+  .posts-page__post__metrics > ul {
+    font-size: 0.5rem;
+    line-height: 1.25rem; } }
 
 .container,
 .container-fluid,
@@ -869,7 +920,8 @@
     margin-left: 91.66667%; } }
 
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  color: #edf5e1; }
 
 .nav-link {
   color: #edf5e1; }

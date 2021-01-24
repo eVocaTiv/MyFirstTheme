@@ -7,16 +7,18 @@ $base-line-height: 1.25 * $base-font-size;
 // Color palette map.
 $theme-colors: (
   "dark": (
-    "primary": #141F33,
+    "primary": #0d63fd,
     "background": #05386b,
     "text": #edf5e1,
     "secondary-text": #ddf4fa,
+    "secondary-background": #212529,
   ),
   "dull": (
     "primary": #2e1114,
     "background": #6b0505,
     "text": #adadad,
     "secondary-text": #c9ecf5,
+    "secondary-background": #212529,
   ),
 );
 
@@ -32,6 +34,10 @@ $grid-breakpoints: (
 
 // Typography Map.
 $text-settings: (
+  "xxs": (
+    font-size: 0.5rem,
+    line-height: $base-line-height,
+  ),
   "xs": (
     font-size: 0.75rem,
     // 12px
@@ -87,6 +93,11 @@ $text-settings: (
 @function theme-secondary-text-color($key: "fresh") {
   $selected-theme-colors: map-get($theme-colors, $key);
   @return map-get($selected-theme-colors, "secondary-text");
+}
+
+@function theme-secondary-background-color($key: "fresh") {
+  $selected-theme-colors: map-get($theme-colors, $key);
+  @return map-get($selected-theme-colors, "secondary-background");
 }
 
 // Animate an element.

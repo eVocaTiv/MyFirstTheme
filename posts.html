@@ -113,7 +113,7 @@
       <div class="row posts-page__parallax-bg-container"></div>
 
       <!-- Tabs -->
-      <div class="row p-4 posts-page__tabs flex-column flex-sm-row">
+      <div class="row p-4 posts-page__tabs justify-content-center">
         <nav class="col-lg-4 nav nav-pills">
           <a class="nav-link active" aria-current="page" href="#">Trending</a>
           <a class="nav-link" href="#">New</a>
@@ -128,6 +128,7 @@
 
         <!-- Feed Options -->
         <div class="row posts-page__options">
+          <div class="col-1"></div>
           <!-- Icon -->
           <div class="col-lg-1 my-2 posts-page__filters__icon"><i class="fas fa-sliders-h"></i></div>
           <!-- Filters -->
@@ -176,12 +177,236 @@
         </div>
       </div>
 
-      <!-- Grid -->
-      <div class="row px-4 posts-page__grid">
-        <!-- Divider -->
-        <div class="row posts-page__divider">
-          <hr />
-        </div>
+      <!-- Posts -->
+      <div class="row mt-4 px-sm-4 posts-page__posts-container">
+ 
+        <!-- Post 1 -->
+        <div class="row p-2 posts-page__post">
+          <!-- Metrics - Likes, Views and comments -->
+          <div class="col-lg-1 posts-page__post__content--empty-col"></div>
+          <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+            <ul style="list-style-type:none; text-align: center;">
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
+                40</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i>
+                40</li>
+              <li class="d-md-none"><i class="fas fa-thumbs-up fa-sm"></i>
+                40</li>
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-eye fa-2x"></i>
+                50</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-eye fa-lg"></i>
+                50</li>
+              <li class="d-md-none"><i class="fas fa-eye fa-sm"></i>
+                50</li>
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-comment-dots fa-2x"></i>
+                19</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-comment-dots fa-lg"></i>
+                19</li>
+              <li class="d-md-none"><i class="fas fa-comment-dots fa-sm"></i>
+                19</li>
+            </ul>
+          </div>
+          <div class="col-lg-8 col-md-9 col-10">
+            <div class="row posts-page__post__content--secondary__actions--container">
+              <div class="col-4">
+              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
+              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
+            </div>
+            </div>
+            <div class="row p-4 posts-page__post__content">
+              <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
+                <img src="img/post-img-1.jpg" class="img-thumbnail posts-page__post__content__image" alt="Post Description Image">
+                <span class="badge bg-success">Easy Recipes</span>
+                <span class="badge bg-info">10 Ingredients</span>
+              </div>
+              
+              <div class="col-10 posts-page__post__content--secondary">
+               How do you make a fresh deep dish pizza in under an hour? 
+               <br /> <br />
+               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
+                - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
+                <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions" href="#">Share</a>
+               &nbsp;
+               <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 posts-page__post__content--tertiary"></div>
+          <div class="col-1 posts-page__post__content--tertiary"></div>
+        </div> 
+
+        <!-- Post 2 -->
+        <div class="row p-2 posts-page__post">
+          <!-- Metrics - Likes, Views and comments -->
+          <div class="col-lg-1 posts-page__post__content--empty-col"></div>
+          <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+            <ul style="list-style-type:none; text-align: center;">
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
+                40</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i>
+                40</li>
+              <li class="d-md-none"><i class="fas fa-thumbs-up fa-sm"></i>
+                40</li>
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-eye fa-2x"></i>
+                50</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-eye fa-lg"></i>
+                50</li>
+              <li class="d-md-none"><i class="fas fa-eye fa-sm"></i>
+                50</li>
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-comment-dots fa-2x"></i>
+                19</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-comment-dots fa-lg"></i>
+                19</li>
+              <li class="d-md-none"><i class="fas fa-comment-dots fa-sm"></i>
+                19</li>
+            </ul>
+          </div>
+          <div class="col-lg-8 col-md-9 col-10">
+            <div class="row posts-page__post__content--secondary__actions--container">
+              <div class="col-4">
+              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
+              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
+            </div>
+            </div>
+            <div class="row p-4 posts-page__post__content">
+              <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
+                <img src="img/post-img-1.jpg" class="img-thumbnail posts-page__post__content__image" alt="Post Description Image">
+                <span class="badge bg-success">Easy Recipes</span>
+                <span class="badge bg-info">10 Ingredients</span>
+              </div>
+              
+              <div class="col-10 posts-page__post__content--secondary">
+               How do you make a fresh deep dish pizza in under an hour? 
+               <br /> <br />
+               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
+                - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
+                <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions" href="#">Share</a>
+               &nbsp;
+               <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 posts-page__post__content--tertiary"></div>
+          <div class="col-1 posts-page__post__content--tertiary"></div>
+        </div> 
+
+
+        <!-- Post 3 -->
+        <div class="row p-2 posts-page__post">
+          <!-- Metrics - Likes, Views and comments -->
+          <div class="col-lg-1 posts-page__post__content--empty-col"></div>
+          <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+            <ul style="list-style-type:none; text-align: center;">
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
+                40</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i>
+                40</li>
+              <li class="d-md-none"><i class="fas fa-thumbs-up fa-sm"></i>
+                40</li>
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-eye fa-2x"></i>
+                50</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-eye fa-lg"></i>
+                50</li>
+              <li class="d-md-none"><i class="fas fa-eye fa-sm"></i>
+                50</li>
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-comment-dots fa-2x"></i>
+                19</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-comment-dots fa-lg"></i>
+                19</li>
+              <li class="d-md-none"><i class="fas fa-comment-dots fa-sm"></i>
+                19</li>
+            </ul>
+          </div>
+          <div class="col-lg-8 col-md-9 col-10">
+            <div class="row posts-page__post__content--secondary__actions--container">
+              <div class="col-4">
+              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
+              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
+            </div>
+            </div>
+            <div class="row p-4 posts-page__post__content">
+              <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
+                <img src="img/post-img-1.jpg" class="img-thumbnail posts-page__post__content__image" alt="Post Description Image">
+                <span class="badge bg-success">Easy Recipes</span>
+                <span class="badge bg-info">10 Ingredients</span>
+              </div>
+              
+              <div class="col-10 posts-page__post__content--secondary">
+               How do you make a fresh deep dish pizza in under an hour? 
+               <br /> <br />
+               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
+                - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
+                <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions" href="#">Share</a>
+               &nbsp;
+               <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 posts-page__post__content--tertiary"></div>
+          <div class="col-1 posts-page__post__content--tertiary"></div>
+        </div> 
+
+
+
+        <!-- Post 4 -->
+        <div class="row p-2 posts-page__post">
+          <!-- Metrics - Likes, Views and comments -->
+          <div class="col-lg-1 posts-page__post__content--empty-col"></div>
+          <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+            <ul style="list-style-type:none; text-align: center;">
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
+                40</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i>
+                40</li>
+              <li class="d-md-none"><i class="fas fa-thumbs-up fa-sm"></i>
+                40</li>
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-eye fa-2x"></i>
+                50</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-eye fa-lg"></i>
+                50</li>
+              <li class="d-md-none"><i class="fas fa-eye fa-sm"></i>
+                50</li>
+              <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-comment-dots fa-2x"></i>
+                19</li>
+              <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-comment-dots fa-lg"></i>
+                19</li>
+              <li class="d-md-none"><i class="fas fa-comment-dots fa-sm"></i>
+                19</li>
+            </ul>
+          </div>
+          <div class="col-lg-8 col-md-9 col-10">
+            <div class="row posts-page__post__content--secondary__actions--container">
+              <div class="col-4">
+              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
+              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
+            </div>
+            </div>
+            <div class="row p-4 posts-page__post__content">
+              <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
+                <img src="img/post-img-1.jpg" class="img-thumbnail posts-page__post__content__image" alt="Post Description Image">
+                <span class="badge bg-success">Easy Recipes</span>
+                <span class="badge bg-info">10 Ingredients</span>
+              </div>
+              
+              <div class="col-10 posts-page__post__content--secondary">
+               How do you make a fresh deep dish pizza in under an hour? 
+               <br /> <br />
+               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
+                - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
+                <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions" href="#">Share</a>
+               &nbsp;
+               <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 posts-page__post__content--tertiary"></div>
+          <div class="col-1 posts-page__post__content--tertiary"></div>
+        </div> 
+
+        <!-- Posts End -->
+      </div>
+      
+
         <!-- TODO: Pagination -->
         <!-- <nav class="row justify-content-center posts-page__pagination-container">
           <ul class="pagination posts-page__pagination">
@@ -195,9 +420,7 @@
           </ul>
         </nav>
       </div> -->
-
       <!-- Toasts Container -->
-    </div>
 
     <!-- POST SCRIPTS -->
     <!-- 1. jQuery and Bootstrap Bundle (includes Popper) -->
