@@ -56,10 +56,10 @@
 .posts-page__options {
   color: #edf5e1; }
 
-.posts-page__filters__button, .posts-page__tags__button {
+.posts-page__filters__button, .posts-page__tags__button, .posts-page__sort__button {
   color: #edf5e1; }
 
-.posts-page__filters__dropdown > button, .posts-page__filters__dropdown-menu, .posts-page__tags__dropdown > button, .posts-page__tags__dropdown-menu {
+.posts-page__filters__dropdown > button, .posts-page__filters__dropdown-menu, .posts-page__tags__dropdown > button, .posts-page__tags__dropdown-menu, .posts-page__sort__dropdown > button, .posts-page__sort__dropdown-menu {
   font-size: 0.75rem;
   line-height: 1.25rem; }
 

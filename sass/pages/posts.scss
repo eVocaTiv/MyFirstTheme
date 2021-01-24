@@ -38,7 +38,8 @@
   }
 
   &__filters,
-  &__tags {
+  &__tags,
+  &__sort {
     &__button {
       color: theme-text-color($selected-theme);
     }
@@ -47,6 +48,7 @@
       @include text-setting("xs");
     }
   }
+
 
   &__filters {
     &__icon {
