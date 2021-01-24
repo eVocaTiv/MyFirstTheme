@@ -22,10 +22,6 @@ body {
   color: theme-secondary-text-color($selected-theme);
 }
 
-.nav-link.active {
-  background-color: theme-background-color($selected-theme) !important;
-}
-
 // Keep navbar-nav inline.
 .navbar-nav {
   display: inline;

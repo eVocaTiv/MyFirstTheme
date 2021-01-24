@@ -929,8 +929,5 @@ body {
 .nav-link:hover {
   color: #ddf4fa; }
 
-.nav-link.active {
-  background-color: #05386b !important; }
-
 .navbar-nav {
   display: inline; }
