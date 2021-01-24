@@ -43,8 +43,8 @@
   font-size: 0.75rem;
   line-height: 1.25rem;
   background: url(../../img/post-bg-body.jpg) rgba(33, 37, 41, 0.9);
-  background-size: cover;
-  background-blend-mode: multiply; }
+  background-blend-mode: multiply;
+  background-size: cover; }
 
 .posts-page__parallax-bg-container {
   height: 30vh;
