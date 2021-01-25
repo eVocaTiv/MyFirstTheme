@@ -1,0 +1,162 @@
+/** This file contains styling for the Posts page (posts.html) **/
+@import "../utils/common.scss";
+
+// Bootstrap imports.
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Posts Page Styling.
+.community-page {
+  &__body {
+    @include text-setting("xs");
+    background: url(../../img/post-bg-body.jpg) rgba(theme-secondary-background-color($selected-theme), 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+  }
+
+  &__community-description {
+    height: 50vh;
+    &__header {
+      @include text-setting("xl");
+      text-transform: uppercase;
+      &__arrow {
+        @include center-text();
+      }
+    }
+  }
+
+  &__parallax-bg-container {
+    height: 25vh;
+    // Put background image here
+    background-image: url(../../img/posts-bg-parallax.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__tabs {
+    background-color: theme-secondary-background-color($selected-theme);
+  }
+
+  &__options {
+    color: theme-text-color($selected-theme);
+  }
+
+  &__filters,
+  &__tags,
+  &__sort {
+    &__button {
+      color: theme-text-color($selected-theme);
+    }
+    &__dropdown > button,
+    &__dropdown-menu {
+      @include text-setting("xs");
+    }
+  }
+
+  &__filters {
+    &__icon {
+      align-self: center;
+      text-align: center;
+    }
+  }
+
+  &__post {
+    &__metrics > ul {
+      list-style-type: none;
+      text-align: center;
+      padding: 0;
+      @include text-setting("xs");
+    }
+    &__content {
+      @include animateProperty(transform);
+      border-radius: 40px;
+      background-color: rgba(theme-secondary-background-color($selected-theme), 0.8);
+      box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
+
+      &--secondary {
+        @include text-setting("md");
+        @include justify-text();
+        &__link {
+          color: theme-text-color($selected-theme);
+          text-decoration: none;
+        }
+        &__link:hover {
+          color: theme-secondary-text-color($selected-theme);
+        }
+        &__actions {
+          @include text-setting("xs");
+          text-decoration: none;
+          color: theme-text-color($selected-theme);
+          &--container {
+            white-space: nowrap;
+          }
+        }
+        &__actions:hover {
+          color: theme-secondary-text-color($selected-theme);
+        }
+      }
+    }
+    &__image {
+      width: 100px;
+    }
+  }
+
+  &__view-more {
+    @include center-text();
+  }
+}
+
+// Media Queries.
+// Medium devices (768px and above)
+@include media-breakpoint-up(md) {
+  .community-page {
+    &__post {
+      &__content:hover {
+        box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.8);
+        transform: translateX(0.5rem);
+      }
+    }
+  }
+}
+
+// (992px and below)
+@include media-breakpoint-down(lg) {
+  .community-page {
+    &__post {
+      &__content {
+        &--secondary {
+          @include text-setting("xs");
+        }
+      }
+    }
+  }
+}
+
+// (768px and below)
+@include media-breakpoint-down(md) {
+  .community-page {
+    &__post {
+      &__content {
+        &--secondary {
+          &__actions {
+            @include text-setting("xxs");
+          }
+        }
+      }
+    }
+  }
+}
+
+// (576px and below)
+@include media-breakpoint-down(xs) {
+  .community-page {
+    &__post {
+      &__metrics > ul {
+        @include text-setting("xxs");
+      }
+    }
+  }
+}

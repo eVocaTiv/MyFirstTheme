@@ -19,8 +19,8 @@
   <title>Document</title>
 </head>
 
-<body class="posts-page__body">
-  <div class="container-fluid posts-page__container">
+<body class="community-page__body">
+  <div class="container-fluid community-page__container">
     <!-- Navigation Bar -->
     <div class="row common__nav-container">
       <div class="row gy-1 m-0 navbar navbar-expand-lg navbar-dark bg-dark common__nav">
@@ -49,8 +49,8 @@
                     <hr class="dropdown-divider" />
                   </li>
                   <li><a class="dropdown-item" href="/community.html">Sports</a></li>
-                  <li><a class="dropdown-item" href="/community.html">Food</a></li>
                   <li><a class="dropdown-item" href="/community.html">Movies</a></li>
+                  <li><a class="dropdown-item" href="/community.html">Music</a></li>
                 </ul>
               </li>
             </ul>
@@ -94,8 +94,24 @@
       </div>
     </div>
 
+    <!-- Background Banner -->
+    <div class="row community-page__parallax-bg-container"></div>
+
+    <!-- Community Description -->
+    <div class="pt-4 px-5 my-5 community-page__community-description">
+      <div class="row justify-content-center community-page__community-description__header">Food</div>
+      <div class="row my-4 justify-content-center community-page__community-description__header__arrow">
+        <a href="#community-page__tabs" class="link-text"><i class="fas fa-angle-double-down fa-3x"></i></a></div>
+      <div class="row mt-5 mb-3 justify-content-center community-page__community-description__content">
+        Welcome to the community of foodies! Explore all sorts of food related threads there.</div>
+      <div class="row mt-3 justify-content-center community-page__community-description__content
+       link-text">
+        Read the thread rules here.
+      </div>
+    </div>
+
     <!-- Tabs -->
-    <div class="row justify-content-center p-4 community-page__tabs">
+    <div id="community-page__tabs" class="row justify-content-center p-4 community-page__tabs">
       <nav class="col-auto nav nav-pills">
         <!-- <div class="row justify-content-center"> -->
         <a class="nav-link active" aria-current="page" href="#">Trending</a>
@@ -106,22 +122,21 @@
       </nav>
 
       <!-- Divider -->
-      <div class="row posts-page__divider mt-3">
+      <div class="row community-page__divider mt-3">
         <hr />
       </div>
 
       <!-- Feed Options -->
-      <div class="row posts-page__options">
-        <div class="col-3"></div>
+      <div class="row justify-content-center community-page__options">
         <!-- Icon -->
-        <div class="col-lg-1 my-2 posts-page__filters__icon"><i class="fas fa-sliders-h"></i></div>
+        <div class="col-lg-1 my-2 community-page__filters__icon"><i class="fas fa-sliders-h"></i></div>
         <!-- Sort -->
-        <div class="col-lg-1 align-self-center mx-lg-1 my-2 posts-page__sort__dropdown btn-group">
-          <button type="posts-page__sort__button button" class="btn btn-outline-light dropdown-toggle"
+        <div class="col-lg-1 align-self-center mx-lg-1 my-2 community-page__sort__dropdown btn-group">
+          <button type="community-page__sort__button button" class="btn btn-outline-light dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
             Sort by
           </button>
-          <ul class="posts-page__tags__dropdown-menu dropdown-menu">
+          <ul class="community-page__tags__dropdown-menu dropdown-menu">
             <li>
               <a class="dropdown-item" href="#">Views</a>
             </li>
@@ -134,24 +149,24 @@
           </ul>
         </div>
         <!-- Filters -->
-        <div class="col-lg-1 mx-lg-1 my-2 posts-page__filters__dropdown btn-group">
-          <button type="posts-page__filters__button button" class="btn btn-outline-light dropdown-toggle"
+        <div class="col-lg-1 mx-lg-1 my-2 community-page__filters__dropdown btn-group">
+          <button type="community-page__filters__button button" class="btn btn-outline-light dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
             Filters
           </button>
-          <ul class="posts-page__filters__dropdown-menu dropdown-menu">
+          <ul class="community-page__filters__dropdown-menu dropdown-menu">
             <li><a class="dropdown-item" href="#">Uploaded this week</a></li>
             <li><a class="dropdown-item" href="#">With atleast 1 comment</a></li>
             <li><a class="dropdown-item" href="#">Archived</a></li>
           </ul>
         </div>
         <!-- Tags -->
-        <div class="col-lg-1 mx-lg-1 my-2 posts-page__tags__dropdown btn-group">
-          <button type="posts-page__tags__button button" class="btn btn-outline-light dropdown-toggle"
+        <div class="col-lg-1 mx-lg-1 my-2 community-page__tags__dropdown btn-group">
+          <button type="community-page__tags__button button" class="btn btn-outline-light dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
             Tags
           </button>
-          <ul class="posts-page__tags__dropdown-menu dropdown-menu">
+          <ul class="community-page__tags__dropdown-menu dropdown-menu">
             <li>
               <a class="dropdown-item" href="#"><span class="badge bg-warning">Easy Recipes</span> </a>
             </li>
@@ -164,7 +179,7 @@
           </ul>
         </div>
         <!-- Mature Content Slider -->
-        <div class="col-lg-1 col-auto my-2 mx-4 align-self-center posts-page__mature-check form-check form-switch">
+        <div class="col-lg-1 col-auto my-2 mx-4 align-self-center community-page__mature-check form-check form-switch">
           <label class="form-check-label" for="mature-content-switch">Mature Content</label>
           <input class="form-check-input" type="checkbox" id="mature-content-switch" checked />
         </div>
@@ -172,13 +187,13 @@
     </div>
 
     <!-- Posts -->
-    <div class="row mt-4 px-sm-4 posts-page__posts-container">
+    <div class="row mt-4 px-sm-4 community-page__posts-container">
 
       <!-- Post 1 -->
-      <div class="row p-2 posts-page__post">
+      <div class="row p-2 community-page__post">
         <!-- Metrics - Likes, Views and comments -->
-        <div class="col-lg-1 posts-page__post__content--empty-col"></div>
-        <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+        <div class="col-lg-1 community-page__post__content--empty-col"></div>
+        <div class="col-2 mt-3 align-self-center community-page__post__metrics">
           <ul style="list-style-type:none; text-align: center;">
             <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
               40</li>
@@ -201,42 +216,43 @@
           </ul>
         </div>
         <div class="col-lg-8 col-md-9 col-10">
-          <div class="row posts-page__post__content--secondary__actions--container">
+          <div class="row community-page__post__content--secondary__actions--container">
             <div class="col-4">
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Mark as read</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Watch thread</a>
             </div>
           </div>
-          <div class="row p-4 posts-page__post__content">
-            <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
-              <img src="img/post-img-1.jpg" class="img-thumbnail posts-page__post__content__image"
+          <div class="row p-4 community-page__post__content">
+            <div class="d-none d-md-block col-md-2 community-page__post__content--primary">
+              <img src="img/post-img-1.jpg" class="img-thumbnail community-page__post__content__image"
                 alt="Post Description Image">
               <span class="badge bg-success">Easy Recipes</span>
               <span class="badge bg-info">10 Ingredients</span>
             </div>
 
-            <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How do you make a fresh deep dish pizza in
+            <div class="col-md-10 col-12 community-page__post__content--secondary">
+              <a class="community-page__post__content--secondary__link" href="/post-details.html">How do you make a
+                fresh deep dish pizza in
                 under an hour?</a>
               <br /> <br />
-              <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
-              <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
+              <a class="community-page__post__content--secondary__actions" href="#">Posted by John</a>
+              - </i><a class="community-page__post__content--secondary__actions" href="#">2 hours ago</a>
+              <i class="fas fa-circle fa-xs"></i> <a class="community-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
-              <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              <a class="community-page__post__content--secondary__actions" href="#">Report</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-1 posts-page__post__content--tertiary"></div>
-        <div class="col-1 posts-page__post__content--tertiary"></div>
+        <div class="col-lg-1 community-page__post__content--tertiary"></div>
+        <div class="col-1 community-page__post__content--tertiary"></div>
       </div>
 
       <!-- Post 2 -->
-      <div class="row p-2 posts-page__post">
+      <div class="row p-2 community-page__post">
         <!-- Metrics - Likes, Views and comments -->
-        <div class="col-lg-1 posts-page__post__content--empty-col"></div>
-        <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+        <div class="col-lg-1 community-page__post__content--empty-col"></div>
+        <div class="col-2 mt-3 align-self-center community-page__post__metrics">
           <ul style="list-style-type:none; text-align: center;">
             <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
               40</li>
@@ -259,43 +275,44 @@
           </ul>
         </div>
         <div class="col-lg-8 col-md-9 col-10">
-          <div class="row posts-page__post__content--secondary__actions--container">
+          <div class="row community-page__post__content--secondary__actions--container">
             <div class="col-4">
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Read</a>
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Read</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Watch thread</a>
             </div>
           </div>
-          <div class="row p-4 posts-page__post__content">
-            <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
-              <img src="img/post-img-2.jpg" class="img-thumbnail posts-page__post__content__image"
+          <div class="row p-4 community-page__post__content">
+            <div class="d-none d-md-block col-md-2 community-page__post__content--primary">
+              <img src="img/post-img-2.jpg" class="img-thumbnail community-page__post__content__image"
                 alt="Post Description Image">
               <span class="badge bg-success">Easy Recipes</span>
               <span class="badge bg-info">10 Ingredients</span>
             </div>
 
-            <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How do you make a fresh deep dish pizza in
+            <div class="col-md-10 col-12 community-page__post__content--secondary">
+              <a class="community-page__post__content--secondary__link" href="/post-details.html">How do you make a
+                fresh deep dish pizza in
                 under an hour?</a>
               <br /> <br />
-              <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
-              <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
+              <a class="community-page__post__content--secondary__actions" href="#">Posted by John</a>
+              - </i><a class="community-page__post__content--secondary__actions" href="#">2 hours ago</a>
+              <i class="fas fa-circle fa-xs"></i> <a class="community-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
-              <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              <a class="community-page__post__content--secondary__actions" href="#">Report</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-1 posts-page__post__content--tertiary"></div>
-        <div class="col-1 posts-page__post__content--tertiary"></div>
+        <div class="col-lg-1 community-page__post__content--tertiary"></div>
+        <div class="col-1 community-page__post__content--tertiary"></div>
       </div>
 
 
       <!-- Post 3 -->
-      <div class="row p-2 posts-page__post">
+      <div class="row p-2 community-page__post">
         <!-- Metrics - Likes, Views and comments -->
-        <div class="col-lg-1 posts-page__post__content--empty-col"></div>
-        <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+        <div class="col-lg-1 community-page__post__content--empty-col"></div>
+        <div class="col-2 mt-3 align-self-center community-page__post__metrics">
           <ul style="list-style-type:none; text-align: center;">
             <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
               40</li>
@@ -318,42 +335,43 @@
           </ul>
         </div>
         <div class="col-lg-8 col-md-9 col-10">
-          <div class="row posts-page__post__content--secondary__actions--container">
+          <div class="row community-page__post__content--secondary__actions--container">
             <div class="col-4">
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watching</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Mark as read</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Watching</a>
             </div>
           </div>
-          <div class="row p-4 posts-page__post__content">
-            <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
-              <img src="img/post-img-3.jpg" class="img-thumbnail posts-page__post__content__image"
+          <div class="row p-4 community-page__post__content">
+            <div class="d-none d-md-block col-md-2 community-page__post__content--primary">
+              <img src="img/post-img-3.jpg" class="img-thumbnail community-page__post__content__image"
                 alt="Post Description Image">
               <span class="badge bg-success">Easy Recipes</span>
               <span class="badge bg-info">10 Ingredients</span>
             </div>
 
-            <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How do you make a fresh deep dish pizza in
+            <div class="col-md-10 col-12 community-page__post__content--secondary">
+              <a class="community-page__post__content--secondary__link" href="/post-details.html">How do you make a
+                fresh deep dish pizza in
                 under an hour?</a>
               <br /> <br />
-              <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
-              <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
+              <a class="community-page__post__content--secondary__actions" href="#">Posted by John</a>
+              - </i><a class="community-page__post__content--secondary__actions" href="#">2 hours ago</a>
+              <i class="fas fa-circle fa-xs"></i> <a class="community-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
-              <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              <a class="community-page__post__content--secondary__actions" href="#">Report</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-1 posts-page__post__content--tertiary"></div>
-        <div class="col-1 posts-page__post__content--tertiary"></div>
+        <div class="col-lg-1 community-page__post__content--tertiary"></div>
+        <div class="col-1 community-page__post__content--tertiary"></div>
       </div>
 
       <!-- Post 4 -->
-      <div class="row p-2 posts-page__post">
+      <div class="row p-2 community-page__post">
         <!-- Metrics - Likes, Views and comments -->
-        <div class="col-lg-1 posts-page__post__content--empty-col"></div>
-        <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+        <div class="col-lg-1 community-page__post__content--empty-col"></div>
+        <div class="col-2 mt-3 align-self-center community-page__post__metrics">
           <ul style="list-style-type:none; text-align: center;">
             <!-- display icons based on screen size -->
             <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
@@ -377,42 +395,43 @@
           </ul>
         </div>
         <div class="col-lg-8 col-md-9 col-10">
-          <div class="row posts-page__post__content--secondary__actions--container">
+          <div class="row community-page__post__content--secondary__actions--container">
             <div class="col-4">
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Mark as read</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Watch thread</a>
             </div>
           </div>
-          <div class="row p-4 posts-page__post__content">
-            <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
-              <img src="img/post-img-4.jpg" class="img-thumbnail posts-page__post__content__image"
+          <div class="row p-4 community-page__post__content">
+            <div class="d-none d-md-block col-md-2 community-page__post__content--primary">
+              <img src="img/post-img-4.jpg" class="img-thumbnail community-page__post__content__image"
                 alt="Post Description Image">
               <span class="badge bg-success">Easy Recipes</span>
               <span class="badge bg-info">10 Ingredients</span>
             </div>
 
-            <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How do you make a fresh deep dish pizza in
+            <div class="col-md-10 col-12 community-page__post__content--secondary">
+              <a class="community-page__post__content--secondary__link" href="/post-details.html">How do you make a
+                fresh deep dish pizza in
                 under an hour?</a>
               <br /> <br />
-              <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
-              <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
+              <a class="community-page__post__content--secondary__actions" href="#">Posted by John</a>
+              - </i><a class="community-page__post__content--secondary__actions" href="#">2 hours ago</a>
+              <i class="fas fa-circle fa-xs"></i> <a class="community-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
-              <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              <a class="community-page__post__content--secondary__actions" href="#">Report</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-1 posts-page__post__content--tertiary"></div>
-        <div class="col-1 posts-page__post__content--tertiary"></div>
+        <div class="col-lg-1 community-page__post__content--tertiary"></div>
+        <div class="col-1 community-page__post__content--tertiary"></div>
       </div>
 
       <!-- Post 5 -->
-      <div class="row p-2 posts-page__post">
+      <div class="row p-2 community-page__post">
         <!-- Metrics - Likes, Views and comments -->
-        <div class="col-lg-1 posts-page__post__content--empty-col"></div>
-        <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
+        <div class="col-lg-1 community-page__post__content--empty-col"></div>
+        <div class="col-2 mt-3 align-self-center community-page__post__metrics">
           <ul style="list-style-type:none; text-align: center;">
             <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
               40</li>
@@ -435,40 +454,41 @@
           </ul>
         </div>
         <div class="col-lg-8 col-md-9 col-10">
-          <div class="row posts-page__post__content--secondary__actions--container">
+          <div class="row community-page__post__content--secondary__actions--container">
             <div class="col-4">
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
-              <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Mark as read</a>
+              <a class="px-2 community-page__post__content--secondary__actions" href="#">Watch thread</a>
             </div>
           </div>
-          <div class="row p-4 posts-page__post__content">
-            <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
-              <img src="img/post-bg-body.jpg" class="img-thumbnail posts-page__post__content__image"
+          <div class="row p-4 community-page__post__content">
+            <div class="d-none d-md-block col-md-2 community-page__post__content--primary">
+              <img src="img/post-bg-body.jpg" class="img-thumbnail community-page__post__content__image"
                 alt="Post Description Image">
               <span class="badge bg-success">Easy Recipes</span>
               <span class="badge bg-info">10 Ingredients</span>
             </div>
 
-            <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How do you make a fresh deep dish pizza in
+            <div class="col-md-10 col-12 community-page__post__content--secondary">
+              <a class="community-page__post__content--secondary__link" href="/post-details.html">How do you make a
+                fresh deep dish pizza in
                 under an hour?</a>
               <br /> <br />
-              <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
-              <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
+              <a class="community-page__post__content--secondary__actions" href="#">Posted by John</a>
+              - </i><a class="community-page__post__content--secondary__actions" href="#">2 hours ago</a>
+              <i class="fas fa-circle fa-xs"></i> <a class="community-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
-              <a class="posts-page__post__content--secondary__actions" href="#">Report</a>
+              <a class="community-page__post__content--secondary__actions" href="#">Report</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-1 posts-page__post__content--tertiary"></div>
-        <div class="col-1 posts-page__post__content--tertiary"></div>
+        <div class="col-lg-1 community-page__post__content--tertiary"></div>
+        <div class="col-1 community-page__post__content--tertiary"></div>
       </div>
 
       <!-- View More Button -->
       <div class="row mx-1 my-5 justify-content-center">
-        <a href="#" class="link-text posts-page__view-more">View more...</a>
+        <a href="#" class="link-text community-page__view-more">View more...</a>
       </div>
       <!-- Posts Container Ends -->
     </div>

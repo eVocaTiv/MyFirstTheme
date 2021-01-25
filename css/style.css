@@ -6,7 +6,7 @@
   line-height: 1.25rem; }
   .login-page__body {
     color: #edf5e1;
-    background: url(../../img/login-bg.jpg) rgba(5, 56, 107, 0.6);
+    background: url(../../img/login-bg.jpg) rgba(0, 0, 0, 0.4);
     background-size: cover;
     background-blend-mode: color-burn; }
   .login-page__container {
@@ -16,18 +16,18 @@
     line-height: 2.5rem;
     text-align: center; }
   .login-page__user-id-container, .login-page__pwd-container {
-    color: #05386b; }
+    color: #000000; }
   .login-page__user-id__help, .login-page__divider {
     color: #ddf4fa; }
   .login-page__submit {
     width: 100%;
     height: 3rem; }
   .login-page__submit:hover {
-    background-color: #469ef6; }
+    background-color: #4084fd; }
   .login-page__alternative-logins--1, .login-page__alternative-logins--2 {
     width: 50%; }
   .login-page__alternative-logins--1:hover, .login-page__alternative-logins--2:hover {
-    color: #05386b; }
+    color: #000000; }
   .login-page__forgot-credentials, .login-page__new-user {
     color: #ddf4fa; }
   .login-page__forgot-credentials:hover, .login-page__new-user:hover {
@@ -226,6 +226,106 @@
 
 @media (max-width: 575.98px) {
   .post-details-page__post__metrics > ul {
+    font-size: 0.5rem;
+    line-height: 1.25rem; } }
+
+/** This file contains styling for the Posts page (posts.html) **/
+/** This file contains common variables, utility functions and mixins**/
+.community-page__body {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  background: url(../../img/post-bg-body.jpg) rgba(33, 37, 41, 0.9);
+  background-blend-mode: multiply;
+  background-size: cover; }
+
+.community-page__community-description {
+  height: 50vh; }
+  .community-page__community-description__header {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-transform: uppercase; }
+    .community-page__community-description__header__arrow {
+      text-align: center; }
+
+.community-page__parallax-bg-container {
+  height: 25vh;
+  background-image: url(../../img/posts-bg-parallax.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.community-page__tabs {
+  background-color: #212529; }
+
+.community-page__options {
+  color: #edf5e1; }
+
+.community-page__filters__button, .community-page__tags__button, .community-page__sort__button {
+  color: #edf5e1; }
+
+.community-page__filters__dropdown > button, .community-page__filters__dropdown-menu, .community-page__tags__dropdown > button, .community-page__tags__dropdown-menu, .community-page__sort__dropdown > button, .community-page__sort__dropdown-menu {
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
+
+.community-page__filters__icon {
+  align-self: center;
+  text-align: center; }
+
+.community-page__post__metrics > ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
+
+.community-page__post__content {
+  transition: transform 0.5s ease-in-out;
+  border-radius: 40px;
+  background-color: rgba(33, 37, 41, 0.8);
+  box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2); }
+  .community-page__post__content--secondary {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: justify; }
+    .community-page__post__content--secondary__link {
+      color: #edf5e1;
+      text-decoration: none; }
+    .community-page__post__content--secondary__link:hover {
+      color: #ddf4fa; }
+    .community-page__post__content--secondary__actions {
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      text-decoration: none;
+      color: #edf5e1; }
+      .community-page__post__content--secondary__actions--container {
+        white-space: nowrap; }
+    .community-page__post__content--secondary__actions:hover {
+      color: #ddf4fa; }
+
+.community-page__post__image {
+  width: 100px; }
+
+.community-page__view-more {
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .community-page__post__content:hover {
+    box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.8);
+    transform: translateX(0.5rem); } }
+
+@media (max-width: 1199.98px) {
+  .community-page__post__content--secondary {
+    font-size: 0.75rem;
+    line-height: 1.25rem; } }
+
+@media (max-width: 991.98px) {
+  .community-page__post__content--secondary__actions {
+    font-size: 0.5rem;
+    line-height: 1.25rem; } }
+
+@media (max-width: 575.98px) {
+  .community-page__post__metrics > ul {
     font-size: 0.5rem;
     line-height: 1.25rem; } }
 
