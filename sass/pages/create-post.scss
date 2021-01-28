@@ -1,0 +1,136 @@
+/** This file contains styling for the Create A Post page (create-post.html) **/
+@import '../utils/common.scss';
+
+// Bootstrap imports.
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+// Posts Page Styling.
+.create-post-page {
+  &__header {
+    @include center-text();
+    @include text-setting('xl');
+  }
+
+  &__body {
+    @include text-setting('xs');
+    background: url(../../img/create-post-bg-body.jpg)
+      rgba(theme-secondary-background-color($selected-theme), 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+  }
+
+  &__options {
+    @include center-text();
+    color: theme-text-color($selected-theme);
+  }
+
+  &__tags,
+  &__community {
+    &__button {
+      color: theme-text-color($selected-theme);
+    }
+    &__dropdown > button,
+    &__dropdown-menu {
+      @include text-setting('xs');
+    }
+  }
+
+  &__options {
+    color: theme-text-color($selected-theme);
+  }
+
+  &__post {
+
+    &__content {
+      border-radius: 40px;
+      background-color: rgba(
+        lighten(theme-secondary-background-color($selected-theme), 15),
+        0.8
+      );
+      box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
+
+      &--secondary {
+        @include text-setting('md');
+        @include justify-text();
+        &__link {
+          color: theme-text-color($selected-theme);
+          text-decoration: none;
+        }
+        &__link:hover {
+          color: theme-secondary-text-color($selected-theme);
+        }
+        &__actions-container {
+          @include center-text();
+        }
+        &__actions {
+          @include text-setting('xs');
+          text-decoration: none;
+          color: theme-text-color($selected-theme);
+          &--container {
+            white-space: nowrap;
+          }
+        }
+        &__actions:hover {
+          color: theme-secondary-text-color($selected-theme);
+        }
+      }
+      &--secondary textarea {
+        color: theme-text-color($selected-theme);
+        background-color: theme-secondary-background-color($selected-theme);
+      }
+      &--secondary textarea:focus {
+        color: theme-text-color($selected-theme);
+        background-color: theme-secondary-background-color($selected-theme);
+      }
+      &--publish button {
+        @include text-setting('xs');
+      }
+    }
+    &__image {
+      width: 100px;
+    }
+  }
+}
+
+// Media Queries.
+
+// (992px and below)
+@include media-breakpoint-down(lg) {
+  .create-post-page {
+    &__post {
+      &__content {
+        &--secondary {
+          @include text-setting('xs');
+        }
+      }
+    }
+  }
+}
+
+// (768px and below)
+@include media-breakpoint-down(md) {
+  .create-post-page {
+    &__post {
+      &__content {
+        &--secondary {
+          &__actions {
+            @include text-setting('xxs');
+          }
+        }
+      }
+    }
+  }
+}
+
+// (576px and below)
+@include media-breakpoint-down(xs) {
+  .create-post-page {
+    &__post {
+      &__metrics > ul {
+        @include text-setting('xxs');
+      }
+    }
+  }
+}

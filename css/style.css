@@ -229,7 +229,7 @@
     font-size: 0.5rem;
     line-height: 1.25rem; } }
 
-/** This file contains styling for the Posts page (posts.html) **/
+/** This file contains styling for the Community page (community.html) **/
 /** This file contains common variables, utility functions and mixins**/
 .community-page__body {
   font-size: 0.75rem;
@@ -239,7 +239,7 @@
   background-size: cover; }
 
 .community-page__community-description {
-  height: 50vh; }
+  height: 40vh; }
   .community-page__community-description__header {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -248,7 +248,7 @@
       text-align: center; }
 
 .community-page__parallax-bg-container {
-  height: 25vh;
+  height: 35vh;
   background-image: url(../../img/posts-bg-parallax.jpg);
   background-attachment: fixed;
   background-position: bottom;
@@ -326,6 +326,105 @@
 
 @media (max-width: 575.98px) {
   .community-page__post__metrics > ul {
+    font-size: 0.5rem;
+    line-height: 1.25rem; } }
+
+/** This file contains styling for the Create A Post page (create-post.html) **/
+/** This file contains common variables, utility functions and mixins**/
+.create-post-page__header {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem; }
+
+.create-post-page__body {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  background: url(../../img/create-post-bg-body.jpg) rgba(33, 37, 41, 0.9);
+  background-blend-mode: multiply;
+  background-size: cover; }
+
+.create-post-page__options {
+  text-align: center;
+  color: #edf5e1; }
+
+.create-post-page__tags__button, .create-post-page__community__button {
+  color: #edf5e1; }
+
+.create-post-page__tags__dropdown > button, .create-post-page__tags__dropdown-menu, .create-post-page__community__dropdown > button, .create-post-page__community__dropdown-menu {
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
+
+.create-post-page__options {
+  color: #edf5e1; }
+
+.create-post-page__post__metrics > ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  font-size: 0.75rem;
+  line-height: 1.25rem; }
+
+.create-post-page__post__metrics .fa-thumbs-up,
+.create-post-page__post__metrics .fa-thumbs-down {
+  cursor: pointer; }
+
+.create-post-page__post__metrics .liked {
+  color: #0d63fd; }
+
+.create-post-page__post__metrics .disliked {
+  color: #dc3545; }
+
+.create-post-page__post__content {
+  border-radius: 40px;
+  background-color: rgba(67, 75, 83, 0.8);
+  box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2); }
+  .create-post-page__post__content--author {
+    background-color: rgba(33, 37, 41, 0.8); }
+  .create-post-page__post__content--secondary {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: justify; }
+    .create-post-page__post__content--secondary__link {
+      color: #edf5e1;
+      text-decoration: none; }
+    .create-post-page__post__content--secondary__link:hover {
+      color: #ddf4fa; }
+    .create-post-page__post__content--secondary__actions-container {
+      text-align: center; }
+    .create-post-page__post__content--secondary__actions {
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      text-decoration: none;
+      color: #edf5e1; }
+      .create-post-page__post__content--secondary__actions--container {
+        white-space: nowrap; }
+    .create-post-page__post__content--secondary__actions:hover {
+      color: #ddf4fa; }
+  .create-post-page__post__content--secondary textarea {
+    color: #edf5e1;
+    background-color: #212529; }
+  .create-post-page__post__content--secondary textarea:focus {
+    color: #edf5e1;
+    background-color: #212529; }
+  .create-post-page__post__content--publish button {
+    font-size: 0.75rem;
+    line-height: 1.25rem; }
+
+.create-post-page__post__image {
+  width: 100px; }
+
+@media (max-width: 1199.98px) {
+  .create-post-page__post__content--secondary {
+    font-size: 0.75rem;
+    line-height: 1.25rem; } }
+
+@media (max-width: 991.98px) {
+  .create-post-page__post__content--secondary__actions {
+    font-size: 0.5rem;
+    line-height: 1.25rem; } }
+
+@media (max-width: 575.98px) {
+  .create-post-page__post__metrics > ul {
     font-size: 0.5rem;
     line-height: 1.25rem; } }
 
@@ -1134,7 +1233,6 @@
     margin-left: 91.66667%; } }
 
 body {
-  min-height: 100vh;
   color: #edf5e1; }
 
 .common__nav__user-actions, .common__nav__search-communities, .common__nav__logo {

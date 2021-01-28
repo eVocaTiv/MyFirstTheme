@@ -1,4 +1,4 @@
-/** This file contains styling for the Posts page (posts.html) **/
+/** This file contains styling for the Community page (community.html) **/
 @import "../utils/common.scss";
 
 // Bootstrap imports.
@@ -16,7 +16,7 @@
   }
 
   &__community-description {
-    height: 50vh;
+    height: 40vh;
     &__header {
       @include text-setting("xl");
       text-transform: uppercase;
@@ -27,7 +27,7 @@
   }
 
   &__parallax-bg-container {
-    height: 25vh;
+    height: 35vh;
     // Put background image here
     background-image: url(../../img/posts-bg-parallax.jpg);
     background-attachment: fixed;

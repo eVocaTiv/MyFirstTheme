@@ -5,13 +5,13 @@
 @import "./pages/posts.scss";
 @import "./pages/post-details.scss";
 @import "./pages/community.scss";
+@import "./pages/create-post.scss";
 
 // Optional Bootstrap imports.
 @import "../node_modules/bootstrap/scss/grid";
 
 // ***Global styling rules ***
 body {
-  min-height: 100vh;
   color: theme-text-color($selected-theme);
 }
 
