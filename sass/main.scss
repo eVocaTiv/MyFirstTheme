@@ -1,19 +1,31 @@
 /** This file contains common styling, and imports all the stylesheets into 1 file**/
 
 // Local imports for all pages.
-@import "./pages/login.scss";
-@import "./pages/posts.scss";
-@import "./pages/post-details.scss";
-@import "./pages/community.scss";
-@import "./pages/create-post.scss";
+@import './pages/login.scss';
+@import './pages/posts.scss';
+@import './pages/post-details.scss';
+@import './pages/community.scss';
+@import './pages/create-post.scss';
 
-// Optional Bootstrap imports.
-@import "../node_modules/bootstrap/scss/grid";
+/* Fonts */
+
+/* Julius Sans One */
+@font-face {
+  font-family: 'Julius Sans One';
+  src: url('../fonts/JuliusSansOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 // ***Global styling rules ***
+
 body {
+  height: 100vh;
   color: theme-text-color($selected-theme);
+  background-color: theme-background-color($selected-theme);
 }
+
+
 
 // Overrides
 

@@ -16,17 +16,6 @@
     background-size: cover;
   }
 
-  &__parallax-bg-container {
-    height: 30vh;
-    // TODO: Disable parallax in small devices
-    // Put background image here
-    background-image: url(../../img/posts-bg-parallax.jpg);
-    background-attachment: fixed;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   &__tabs {
     background-color: theme-secondary-background-color($selected-theme);
   }

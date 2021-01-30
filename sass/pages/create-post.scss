@@ -15,7 +15,7 @@
 
   &__body {
     @include text-setting('xs');
-    background: url(../../img/create-post-bg-body.jpg)
+    background: url(../../img/create-post-body-bg.jpg)
       rgba(theme-secondary-background-color($selected-theme), 0.9);
     background-blend-mode: multiply;
     background-size: cover;
