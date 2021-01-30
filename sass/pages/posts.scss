@@ -1,17 +1,20 @@
 /** This file contains styling for the Posts page (posts.html) **/
 
-@import "../utils/common.scss";
+/* Import common styling utilities. */
+@import '../utils/common.scss';
 
-// Bootstrap imports.
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
+/* Bootstrap imports. */
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
 
-// Posts Page Styling.
+/* Posts Page Styling. */
 .posts-page {
   &__body {
-    @include text-setting("xs");
-    background: url(../../img/post-bg-body.jpg) rgba(theme-secondary-background-color($selected-theme), 0.9);
+    @include text-setting('xs');
+    // Put background image here.
+    background: url(../../img/post-bg-body.jpg)
+      rgba(theme-secondary-background-color($selected-theme), 0.9);
     background-blend-mode: multiply;
     background-size: cover;
   }
@@ -32,14 +35,14 @@
     }
     &__dropdown > button,
     &__dropdown-menu {
-      @include text-setting("xs");
+      @include text-setting('xs');
     }
   }
 
   &__filters {
     &__icon {
       align-self: center;
-      text-align: center;
+      @include center-text();
     }
   }
 
@@ -48,16 +51,19 @@
       list-style-type: none;
       text-align: center;
       padding: 0;
-      @include text-setting("xs");
+      @include text-setting('xs');
     }
     &__content {
       @include animateProperty(transform);
       border-radius: 40px;
-      background-color: rgba(theme-secondary-background-color($selected-theme), 0.8);
+      background-color: rgba(
+        theme-secondary-background-color($selected-theme),
+        0.8
+      );
       box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
 
       &--secondary {
-        @include text-setting("md");
+        @include text-setting('md');
         @include justify-text();
         &__link {
           color: theme-text-color($selected-theme);
@@ -67,7 +73,7 @@
           color: theme-secondary-text-color($selected-theme);
         }
         &__actions {
-          @include text-setting("xs");
+          @include text-setting('xs');
           text-decoration: none;
           color: theme-text-color($selected-theme);
           &--container {
@@ -89,9 +95,10 @@
   }
 }
 
-// Media Queries.
+/* Media Queries. */
 // Medium devices (768px and above)
 @include media-breakpoint-up(md) {
+  // Disable hover animation on small devices.
   .posts-page {
     &__post {
       &__content:hover {
@@ -102,27 +109,27 @@
   }
 }
 
-// (992px and below)
+// Large devices (992px and below)
 @include media-breakpoint-down(lg) {
   .posts-page {
     &__post {
       &__content {
         &--secondary {
-          @include text-setting("xs");
+          @include text-setting('xs');
         }
       }
     }
   }
 }
 
-// (768px and below)
+// Medium devices (768px and below)
 @include media-breakpoint-down(md) {
   .posts-page {
     &__post {
       &__content {
         &--secondary {
           &__actions {
-            @include text-setting("xxs");
+            @include text-setting('xxs');
           }
         }
       }
@@ -130,12 +137,12 @@
   }
 }
 
-// (576px and below)
+// Extra Small devices like phones (576px and below)
 @include media-breakpoint-down(xs) {
   .posts-page {
     &__post {
       &__metrics > ul {
-        @include text-setting("xxs");
+        @include text-setting('xxs');
       }
     }
   }

@@ -1,23 +1,14 @@
 /** This file contains common styling, and imports all the stylesheets into 1 file**/
+/* This compiled .css code is then automatically built in css/styles.css */
 
-// Local imports for all pages.
+/* Import styling of all pages */
 @import './pages/login.scss';
 @import './pages/posts.scss';
 @import './pages/post-details.scss';
 @import './pages/community.scss';
 @import './pages/create-post.scss';
 
-/* Fonts */
-
-/* Julius Sans One */
-@font-face {
-  font-family: 'Julius Sans One';
-  src: url('../fonts/JuliusSansOne-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-// ***Global styling rules ***
+/* Global styling rules */
 
 body {
   height: 100vh;
@@ -25,13 +16,11 @@ body {
   background-color: theme-background-color($selected-theme);
 }
 
-
-
-// Overrides
+/* Overrides */
 
 // Common components styling.
 .common {
-  // Page Header - used in pages like Posts (posts.html), Post Details (post-details.html)
+  // Page Header - used in all pages except the login page.
   &__nav__user-actions,
   &__nav__search-communities,
   &__nav__logo {
@@ -45,7 +34,7 @@ body {
     border-color: theme-primary-color($selected-theme);
     box-shadow: 0 0 0 0.25rem rgba(theme-primary-color($selected-theme), 0.25);
   }
-  // Page Footer - used in pages like Posts (posts.html), Post Details (post-details.html)
+  // Page Footer - used in all pages except the login page.
   &__footer-container {
     @include center-text();
   }
@@ -56,6 +45,7 @@ body {
 }
 
 // Bootstrap nav overrides.
+// Feel free to modify them as you like.
 .nav-link,
 .link-text {
   color: theme-text-color($selected-theme);
@@ -72,29 +62,14 @@ body {
   display: inline;
 }
 
-// Media Queries.
+/* Media Queries. */
 
 // 768px and below
 @include media-breakpoint-down(sm) {
+  // Footer items automatically stack up in small screen sizes.
   .common {
     &__footer {
       height: 20vh;
     }
   }
-}
-
-// Small devices (landscape phones, 576px and up)
-@include media-breakpoint-up(sm) {
-}
-// Medium devices (tablets, 768px and up)
-@include media-breakpoint-up(md) {
-}
-// Large devices (desktops, 992px and up)
-@include media-breakpoint-up(lg) {
-}
-// X-Large devices (large desktops, 1200px and up)
-@include media-breakpoint-up(xl) {
-}
-// XX-Large devices (larger desktops, 1400px and up)
-@include media-breakpoint-up(xxl) {
 }

@@ -1,4 +1,6 @@
 /** This file contains styling for the Create A Post page (create-post.html) **/
+
+/* Import common styling utilities. */
 @import '../utils/common.scss';
 
 // Bootstrap imports.
@@ -6,7 +8,7 @@
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
 
-// Posts Page Styling.
+/* Posts Page Styling. */
 .create-post-page {
   &__header {
     @include center-text();
@@ -15,6 +17,7 @@
 
   &__body {
     @include text-setting('xs');
+    // Put background image here.
     background: url(../../img/create-post-body-bg.jpg)
       rgba(theme-secondary-background-color($selected-theme), 0.9);
     background-blend-mode: multiply;
@@ -42,7 +45,6 @@
   }
 
   &__post {
-
     &__content {
       border-radius: 40px;
       background-color: rgba(
@@ -94,9 +96,8 @@
   }
 }
 
-// Media Queries.
-
-// (992px and below)
+/* Media Queries. */
+// Large devices (992px and below)
 @include media-breakpoint-down(lg) {
   .create-post-page {
     &__post {
@@ -109,7 +110,7 @@
   }
 }
 
-// (768px and below)
+// Medium devices (768px and below)
 @include media-breakpoint-down(md) {
   .create-post-page {
     &__post {
@@ -124,7 +125,7 @@
   }
 }
 
-// (576px and below)
+// Extra small devices (576px and below)
 @include media-breakpoint-down(xs) {
   .create-post-page {
     &__post {

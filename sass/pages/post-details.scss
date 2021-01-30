@@ -1,12 +1,14 @@
 /** This file contains styling for the Post Details page (post-details.html) **/
+
+/* Import common styling utilities. */
 @import "../utils/common.scss";
 
-// Bootstrap imports.
+/* Bootstrap imports. */
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
-// Posts Page Styling.
+/* Post Details Page Styling. */
 .post-details-page {
   &__body {
     @include text-setting("xs");
@@ -115,9 +117,9 @@
   }
 }
 
-// Media Queries.
+/* Media Queries. */
 
-// (992px and below)
+// Large Devices (992px and below)
 @include media-breakpoint-down(lg) {
   .post-details-page {
     &__post {
@@ -130,7 +132,7 @@
   }
 }
 
-// (768px and below)
+// Medium devices (768px and below)
 @include media-breakpoint-down(md) {
   .post-details-page {
     &__post {
@@ -145,7 +147,7 @@
   }
 }
 
-// (576px and below)
+// Extra small devices (576px and below)
 @include media-breakpoint-down(xs) {
   .post-details-page {
     &__post {

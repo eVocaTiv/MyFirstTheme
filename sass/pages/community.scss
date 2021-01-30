@@ -1,15 +1,18 @@
 /** This file contains styling for the Community page (community.html) **/
+
+/* Import common styling utilities. */
 @import '../utils/common.scss';
 
-// Bootstrap imports.
+/* Bootstrap imports. */
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
 
-// Posts Page Styling.
+/* Posts Page Styling. */
 .community-page {
   &__body {
     @include text-setting('xs');
+    // Put background image here.
     background: url(../../img/community-bg.jpg)
       rgba(theme-secondary-background-color($selected-theme), 0.9);
     background-blend-mode: multiply;
@@ -29,11 +32,11 @@
 
   &__parallax-bg-container {
     height: 50vh;
-    // Put background image here
+    // Put background image here.
     background-image: url(../../img/community-top-bg.jpg);
     background-size: cover;
     background-position: bottom;
-    /* Uncomment below rules to enable parallax background while scrolling */
+    /* Uncomment below 2 rules to enable parallax background while scrolling */
     // background-attachment: fixed;
     // background-repeat: no-repeat;
   }
@@ -114,20 +117,9 @@
   }
 }
 
-// Media Queries.
-// Medium devices (768px and above)
-@include media-breakpoint-up(md) {
-  .community-page {
-    &__post {
-      &__content:hover {
-        box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.8);
-        transform: translateX(0.5rem);
-      }
-    }
-  }
-}
+/* Media Queries. */
 
-// (992px and below)
+// Large Devices (992px and below)
 @include media-breakpoint-down(lg) {
   .community-page {
     &__post {
@@ -140,7 +132,20 @@
   }
 }
 
-// (768px and below)
+// Medium devices (768px and above)
+@include media-breakpoint-up(md) {
+  .community-page {
+    &__post {
+      &__content:hover {
+        box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.8);
+        transform: translateX(0.5rem);
+      }
+    }
+  }
+}
+
+
+// Medium devices (768px and below)
 @include media-breakpoint-down(md) {
   .community-page {
     &__post {
@@ -155,7 +160,7 @@
   }
 }
 
-// (576px and below)
+// Extra small devices (576px and below)
 @include media-breakpoint-down(xs) {
   .community-page {
     &__post {
