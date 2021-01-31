@@ -1,73 +1,97 @@
 /** This file contains styling for the Login page (login.html) **/
 
-/* Import common styling utilities. */
-@import "../utils/common.scss";
+/*------------------------------------------------------------------
+[Table of contents]
 
-/* Bootstrap imports.*/
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
+1. Import common styling utilities
+2. Bootstrap imports
+3. Login Page Styling
+  - 3.1 Body
+  - 3.2 Page Container
+  - 3.3 Header
+  - 3.4 User id & Password
+  - 3.5 Submit / Enter Site
+  - 3.6 Alternative Logins: Google & Facebook
+  - 3.7 Help links
+4. Login Page Media Queries
 
-/* Login Page Styling. */
+-------------------------------------------------------------------*/
+
+/* 1. Import common styling utilities. */
+@import '../utils/common.scss';
+
+/* 2. Bootstrap imports.*/
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+/* 3. Login Page Styling. */
 .login-page {
-  @include text-setting("xs");
+  @include text-setting('xs');
 
+  // 3.1 Body
   &__body {
     color: theme-text-color($selected-theme);
     // Put background image here.
-    background: url(../../img/login-bg.jpg) rgba(theme-background-color($selected-theme), 0.4);
+    background: url(../../img/login-bg.jpg)
+      rgba(theme-background-color($selected-theme), 0.4);
     background-size: cover;
     background-blend-mode: color-burn;
   }
 
+  // 3.2 Page Container
   // override bootstrap container width
   &__container {
     width: 40% !important;
   }
 
+  // 3.3 Header
   &__header {
-    @include text-setting("xxl");
+    @include text-setting('xxl');
     @include center-text();
   }
 
+  // 3.4 User id & password
   &__user-id-container,
   &__pwd-container {
     color: theme-background-color($selected-theme);
   }
-
   &__user-id__help,
   &__divider {
     color: theme-secondary-text-color($selected-theme);
   }
 
+  // 3.5 Submit / Enter Site
   &__submit {
     width: 100%;
     height: $spacer * 3;
   }
-
   &__submit:hover {
     background-color: lighten(theme-primary-color($selected-theme), 10);
   }
 
+  // 3.6 Alternative Logins: Google & Facebook
   &__alternative-logins--1,
   &__alternative-logins--2 {
     width: 50%;
   }
-
   &__alternative-logins--1:hover,
   &__alternative-logins--2:hover {
     color: theme-background-color($selected-theme);
   }
 
-  &__forgot-credentials, &__new-user {
+  // 3.7 Help links
+  &__forgot-credentials,
+  &__new-user {
     color: theme-secondary-text-color($selected-theme);
   }
-  &__forgot-credentials:hover, &__new-user:hover {
+  &__forgot-credentials:hover,
+  &__new-user:hover {
     color: theme-text-color($selected-theme);
   }
 }
 
-/* Media Queries. */
+/* 4. Media Queries. */
 // Small devices (768px and below)
 @include media-breakpoint-down(sm) {
   .login-page {

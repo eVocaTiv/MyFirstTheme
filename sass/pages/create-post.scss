@@ -1,20 +1,37 @@
 /** This file contains styling for the Create A Post page (create-post.html) **/
 
-/* Import common styling utilities. */
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Import common styling utilities
+2. Bootstrap imports
+3. Create A Post Page Styling
+  - 3.1 Header
+  - 3.2 Body
+  - 3.3 Options
+  - 3.4 Post Styling
+        - 3.4.1 Content
+4. Create A Post Page Media Queries
+
+-------------------------------------------------------------------*/
+
+/* 1. Import common styling utilities. */
 @import '../utils/common.scss';
 
-// Bootstrap imports.
+/* 2. Bootstrap imports. */
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
 
-/* Posts Page Styling. */
+/* 3. Create A Post Page Styling. */
 .create-post-page {
+  // 3.1 Header
   &__header {
     @include center-text();
     @include text-setting('xl');
   }
 
+  // 3.2 Body
   &__body {
     @include text-setting('xs');
     // Put background image here.
@@ -24,11 +41,11 @@
     background-size: cover;
   }
 
+  // 3.3 Options
   &__options {
     @include center-text();
     color: theme-text-color($selected-theme);
   }
-
   &__tags,
   &__community {
     &__button {
@@ -39,12 +56,13 @@
       @include text-setting('xs');
     }
   }
-
   &__options {
     color: theme-text-color($selected-theme);
   }
 
+  // 3.4 Post
   &__post {
+    // 3.4.1 Content
     &__content {
       border-radius: 40px;
       background-color: rgba(
@@ -96,7 +114,7 @@
   }
 }
 
-/* Media Queries. */
+/* 4. Media Queries. */
 // Large devices (992px and below)
 @include media-breakpoint-down(lg) {
   .create-post-page {

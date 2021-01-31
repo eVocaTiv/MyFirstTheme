@@ -1,15 +1,33 @@
 /** This file contains styling for the Post Details page (post-details.html) **/
 
-/* Import common styling utilities. */
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Import common styling utilities
+2. Bootstrap imports
+3. Post Details Page Styling
+  - 3.1 Body
+  - 3.2 Options
+  - 3.3 Divider
+  - 3.4 Post Styling
+        - 3.4.1 Metrics - Likes, views & comments
+        - 3.4.2 Content
+  - 3.5 View more
+4. Post Details Page Media Queries
+
+-------------------------------------------------------------------*/
+
+/* 1. Import common styling utilities. */
 @import "../utils/common.scss";
 
-/* Bootstrap imports. */
+/* 2. Bootstrap imports. */
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
-/* Post Details Page Styling. */
+/* 3. Post Details Page Styling. */
 .post-details-page {
+  // 3.1 Body
   &__body {
     @include text-setting("xs");
     background: url(../../img/post-details-post-img.jpg) rgba(theme-secondary-background-color($selected-theme), 0.9);
@@ -17,10 +35,10 @@
     background-size: cover;
   }
 
+  // 3.2 Options
   &__options {
     color: theme-text-color($selected-theme);
   }
-
   &__tags,
   &__sort {
     &__button {
@@ -32,11 +50,14 @@
     }
   }
 
+  // 3.3 Divider
   &__divider__text {
     @include text-setting("md");
   }
 
+  // 3.4 Post
   &__post {
+    // 3.4.1 Metrics - Likes, Comments & Views
     &__metrics > ul {
       list-style-type: none;
       @include center-text();
@@ -54,6 +75,7 @@
       color: $danger;
     }
 
+    // 3.4.2 Content
     &__content {
       &--author {
         background-color: rgba(theme-secondary-background-color($selected-theme), 0.8);
@@ -104,13 +126,13 @@
     }
   }
 
+  // 3.5 View more
   &__view-more {
     @include center-text();
   }
 }
 
-/* Media Queries. */
-
+/* 4. Media Queries. */
 // Large Devices (992px and below)
 @include media-breakpoint-down(lg) {
   .post-details-page {

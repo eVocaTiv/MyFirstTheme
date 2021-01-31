@@ -1,15 +1,34 @@
 /** This file contains styling for the Community page (community.html) **/
 
-/* Import common styling utilities. */
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Import common styling utilities
+2. Bootstrap imports
+3. Community Page Styling
+  - 3.1 Body
+  - 3.2 Community Description
+  - 3.3 Community Background
+  - 3.4 Tabs & Options
+  - 3.5 Post Styling
+        - 3.5.1 Metrics - Likes, Views, Comments 
+        - 3.5.2 Content
+  - 3.6 View more link
+4. Community Page Media Queries
+
+-------------------------------------------------------------------*/
+
+/* 1. Import common styling utilities. */
 @import '../utils/common.scss';
 
-/* Bootstrap imports. */
+/* 2. Bootstrap imports. */
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
 
-/* Posts Page Styling. */
+/* 3. Community Page Styling. */
 .community-page {
+  // 3.1 Body
   &__body {
     @include text-setting('xs');
     // Put background image here.
@@ -19,6 +38,7 @@
     background-size: cover;
   }
 
+  // 3.2 Community Description
   &__community-description {
     height: 30vh;
     &__header {
@@ -30,6 +50,7 @@
     }
   }
 
+  // 3.3 Community background
   &__parallax-bg-container {
     height: 50vh;
     // Put background image here.
@@ -41,14 +62,13 @@
     // background-repeat: no-repeat;
   }
 
+  // 3.4 Tabs & Options
   &__tabs {
     background-color: theme-secondary-background-color($selected-theme);
   }
-
   &__options {
     color: theme-text-color($selected-theme);
   }
-
   &__filters,
   &__tags,
   &__sort {
@@ -60,7 +80,6 @@
       @include text-setting('xs');
     }
   }
-
   &__filters {
     &__icon {
       align-self: center;
@@ -68,13 +87,16 @@
     }
   }
 
+  // 3.5 Post
   &__post {
+    // 3.5.1 Metrics
     &__metrics > ul {
       list-style-type: none;
       text-align: center;
       padding: 0;
       @include text-setting('xs');
     }
+    // 3.5.2 Content
     &__content {
       @include animateProperty(transform);
       border-radius: 40px;
@@ -112,13 +134,13 @@
     }
   }
 
+  // 3.6 View more
   &__view-more {
     @include center-text();
   }
 }
 
-/* Media Queries. */
-
+/* 4. Media Queries. */
 // Large Devices (992px and below)
 @include media-breakpoint-down(lg) {
   .community-page {
@@ -143,7 +165,6 @@
     }
   }
 }
-
 
 // Medium devices (768px and below)
 @include media-breakpoint-down(md) {

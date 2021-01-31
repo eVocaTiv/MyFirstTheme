@@ -1,13 +1,28 @@
 /** This file contains common variables, utility functions and mixins**/
 
-// *** Global variables and Bootstrap overrides ***
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Global variables and Bootstrap overrides
+    -1.1 Color palette map
+    -1.2 Breakpoints
+    -1.3 Typography settings
+
+2. Utility functions and mixins
+    -2.1 Color theme utils
+    -2.2 Animation utils
+    -2.3 Typography utils
+
+-------------------------------------------------------------------*/
+
+// *** 1. Global variables and Bootstrap overrides ***
 $selected-theme: "default";
 $base-font-size: 1rem;
 $spacer: 1rem;
 $base-line-height: 1.25 * $base-font-size;
 
-// Color palette map.
-// Extend color palette here.
+// 1.1 Color palette map.
+// Extend colors here or make your own color themes.
 $theme-colors: (
   "default": (
     "primary": #0d63fd,
@@ -19,7 +34,7 @@ $theme-colors: (
   ),
 );
 
-// Breakpoints.
+// 1.2 Breakpoints.
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -29,7 +44,7 @@ $grid-breakpoints: (
   xxl: 1400px,
 );
 
-// Typography Map.
+// 1.3 Typography Map.
 $text-settings: (
   "xxs": (
     font-size: 0.5rem,
@@ -72,8 +87,8 @@ $text-settings: (
   ),
 );
 
-// ** Utility functions and mixins **
-// Color theme.
+// ** 2. Utility functions and mixins **
+// 2.1 Color theme utils.
 @function theme-primary-color($key: "fresh") {
   $selected-theme-colors: map-get($theme-colors, $key);
   @return map-get($selected-theme-colors, "primary");
@@ -97,12 +112,12 @@ $text-settings: (
   @return map-get($selected-theme-colors, "secondary-background");
 }
 
-// Animate an element.
+// 2.2 Animation utils.
 @mixin animateProperty($property: "all") {
   transition: $property 0.5s ease-in-out;
 }
 
-// Font utils.
+// 2.3 Typography utils.
 @function text-scale($level) {
   @return map-get(map-get($text-settings, $level), "font-size");
 }
