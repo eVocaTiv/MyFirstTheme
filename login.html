@@ -16,15 +16,16 @@
   <!-- 2. JQuery -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-
-  <title>Document</title>
+  <title>Login</title>
 </head>
 
+<!-- Page body starts -->
 <body class="login-page__body">
   <div class="container-fluid pt-5 login-page__container">
     <div class="row login-page__header">
       <div class="col m-5">Login</div>
     </div>
+    <!-- Login form starts -->
     <form>
       <div class="form-floating mb-3 login-page__user-id-container">
         <input type="text" placeholder="abc@gmail.com" class="form-control login-page__user-id" id="login-page__user-id"
@@ -61,20 +62,22 @@
           &nbsp;Continue With Google
         </button>
         <div class="col-sm-1"></div>
-        <button type="submit" 
+        <button type="submit"
           class="btn btn-outline-light mt-4 col login-page__alternative-logins--1 login-page__facebook">
           <i class="fab fa-facebook"></i>
           &nbsp;Continue With Facebook
         </button>
       </div>
 
-      <a href="#"" class=" text-decoration-none row mt-5 justify-content-center login-page__forgot-credentials">
+      <!-- Help links -->
+      <a href="#" class=" text-decoration-none row mt-5 justify-content-center login-page__forgot-credentials">
         Forgot credentials?
       </a>
-      <a href="#"" class=" text-decoration-none row mt-3 justify-content-center login-page__new-user">
+      <a href="#" class=" text-decoration-none row mt-3 justify-content-center login-page__new-user">
         New User?
       </a>
     </form>
+    <!-- Login form ends -->
   </div>
   <!-- POST SCRIPTS -->
   <!-- 1. Bootstrap Bundle (includes Popper) -->
@@ -94,5 +97,6 @@
     });
   </script>
 </body>
+<!-- Page body ends -->
 
 </html>

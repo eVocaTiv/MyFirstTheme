@@ -14,8 +14,10 @@
   <!-- 1. Font Awesome -->
   <script src="https://kit.fontawesome.com/193264d773.js" crossorigin="anonymous"></script>
 
-  <title>Document</title>
+  <title>Posts</title>
 </head>
+
+<!-- Page body starts -->
 
 <body class="posts-page__body">
   <div class="container-fluid posts-page__container">
@@ -29,7 +31,7 @@
         </div>
         <!-- Communities -->
         <div class="col-lg-2 mb-2 common__nav__search-communities">
-          <div class="navbar-collapse" id="nav-bar__communities-dark-dropdown">
+          <div class="navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item dropdown navbar-brand">
                 <a class="nav-link dropdown-toggle common__communities-dropdown-toggle" href="#"
@@ -54,6 +56,7 @@
             </ul>
           </div>
         </div>
+        <!-- Communities Ends -->
 
         <!-- Search Posts -->
         <div class="col-lg-4 common__nav__search">
@@ -73,7 +76,7 @@
           <a class="navbar-brand my-2" href="/create-post.html" tabindex="-1" aria-disabled="true"><i
               class="fas fa-plus"></i>&nbsp;Post</a>
           <!-- User Options -->
-          <li class="navbar-nav nav-item dropdown navbar-brand">
+          <div class="navbar-nav nav-item dropdown navbar-brand">
             <a class="navbar-brand common__user-dropdown-toggle" href="#" id="nav-bar__user-dark-dropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bars"></i>&nbsp;User</a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="nav-bar__user-dark-dropdown">
@@ -87,20 +90,19 @@
                 <a class="dropdown-item" href="/login.html"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
               </li>
             </ul>
-          </li>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Nav Bar Ends -->
 
     <!-- Tabs -->
     <div class="row justify-content-center p-4 community-page__tabs">
       <nav class="col-auto nav nav-pills">
-        <!-- <div class="row justify-content-center"> -->
         <a class="nav-link active" aria-current="page" href="#">Trending</a>
         <a class="nav-link" href="#">New</a>
         <a class="nav-link" href="#">Most Viewed</a>
         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Most Commented</a>
-        <!-- </div> -->
       </nav>
 
       <!-- Divider -->
@@ -115,7 +117,7 @@
         <div class="col-lg-1 my-2 posts-page__filters__icon"><i class="fas fa-sliders-h"></i></div>
         <!-- Sort -->
         <div class="col-lg-1 align-self-center mx-lg-1 my-2 posts-page__sort__dropdown btn-group">
-          <button type="posts-page__sort__button button" class="btn btn-outline-light dropdown-toggle"
+          <button type="button" class="btn btn-outline-light dropdown-toggle posts-page__sort__button"
             data-bs-toggle="dropdown" aria-expanded="false">
             Sort by
           </button>
@@ -133,7 +135,7 @@
         </div>
         <!-- Filters -->
         <div class="col-lg-1 mx-lg-1 my-2 posts-page__filters__dropdown btn-group">
-          <button type="posts-page__filters__button button" class="btn btn-outline-light dropdown-toggle"
+          <button type="button" class="btn btn-outline-light dropdown-toggle posts-page__filters__button"
             data-bs-toggle="dropdown" aria-expanded="false">
             Filters
           </button>
@@ -145,7 +147,7 @@
         </div>
         <!-- Tags -->
         <div class="col-lg-1 mx-lg-1 my-2 posts-page__tags__dropdown btn-group">
-          <button type="posts-page__tags__button button" class="btn btn-outline-light dropdown-toggle"
+          <button type="button" class="btn btn-outline-light dropdown-toggle posts-page__tags__button"
             data-bs-toggle="dropdown" aria-expanded="false">
             Tags
           </button>
@@ -167,17 +169,20 @@
           <input class="form-check-input" type="checkbox" id="mature-content-switch" checked />
         </div>
       </div>
+      <!-- Feed Options Ends -->
     </div>
+    <!-- Tabs Ends -->
 
     <!-- Posts -->
     <div class="row mt-4 px-sm-4 posts-page__posts-container">
 
       <!-- Post 1 -->
       <div class="row p-2 posts-page__post">
-        <!-- Metrics - Likes, Views and comments -->
         <div class="col-lg-1 posts-page__post__content--empty-col"></div>
+        <!-- Metrics - Likes, Views and comments -->
         <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
           <ul style="list-style-type:none; text-align: center;">
+            <!-- Display icons based on screen size -->
             <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
               40</li>
             <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i>
@@ -198,13 +203,16 @@
               19</li>
           </ul>
         </div>
+        <!-- Metrics Ends -->
         <div class="col-lg-8 col-md-9 col-10">
+          <!-- Post Actions - Mark as Read, Watch Thread -->
           <div class="row posts-page__post__content--secondary__actions--container">
             <div class="col-4">
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
             </div>
           </div>
+          <!-- Post Content -->
           <div class="row p-4 posts-page__post__content">
             <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
               <img src="img/posts-post-img-1.jpg" class="img-thumbnail posts-page__post__content__image"
@@ -214,11 +222,12 @@
             </div>
 
             <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How do you make a fresh deep dish pizza in
+              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How do you make a fresh
+                deep dish pizza in
                 under an hour?</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by John</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
+              - <a class="posts-page__post__content--secondary__actions" href="#">2 hours ago</a>
               <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
@@ -229,6 +238,7 @@
         <div class="col-lg-1 posts-page__post__content--tertiary"></div>
         <div class="col-1 posts-page__post__content--tertiary"></div>
       </div>
+      <!-- Post Ends -->
 
       <!-- Post 2 -->
       <div class="row p-2 posts-page__post">
@@ -256,13 +266,16 @@
               19</li>
           </ul>
         </div>
+        <!-- Metrics Ends -->
         <div class="col-lg-8 col-md-9 col-10">
+          <!-- Post Actions -->
           <div class="row posts-page__post__content--secondary__actions--container">
             <div class="col-4">
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Read</a>
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
             </div>
           </div>
+          <!-- Post Content -->
           <div class="row p-4 posts-page__post__content">
             <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
               <img src="img/posts-post-img-2.jpg" class="img-thumbnail posts-page__post__content__image"
@@ -270,10 +283,11 @@
             </div>
 
             <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">What do you guys feel about........</a>
+              <a class="posts-page__post__content--secondary__link" href="/post-details.html">What do you guys feel
+                about........</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by Emma</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">4 hours ago</a>
+              - <a class="posts-page__post__content--secondary__actions" href="#">4 hours ago</a>
               <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
@@ -284,6 +298,7 @@
         <div class="col-lg-1 posts-page__post__content--tertiary"></div>
         <div class="col-1 posts-page__post__content--tertiary"></div>
       </div>
+      <!-- Post Ends -->
 
 
       <!-- Post 3 -->
@@ -312,13 +327,17 @@
               19</li>
           </ul>
         </div>
+        <!-- Metrics Ends -->
+
         <div class="col-lg-8 col-md-9 col-10">
+          <!-- Post Actions -->
           <div class="row posts-page__post__content--secondary__actions--container">
             <div class="col-4">
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watching</a>
             </div>
           </div>
+          <!-- Post Content -->
           <div class="row p-4 posts-page__post__content">
             <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
               <img src="img/posts-post-img-3.jpg" class="img-thumbnail posts-page__post__content__image"
@@ -327,10 +346,11 @@
             </div>
 
             <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How can I repair my car? Tried checking the engine oil, cooling tube.....</a>
+              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How can I repair my car?
+                Tried checking the engine oil, cooling tube.....</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by James</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">5 hours ago</a>
+              - <a class="posts-page__post__content--secondary__actions" href="#">5 hours ago</a>
               <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
@@ -341,6 +361,7 @@
         <div class="col-lg-1 posts-page__post__content--tertiary"></div>
         <div class="col-1 posts-page__post__content--tertiary"></div>
       </div>
+      <!-- Post Ends -->
 
       <!-- Post 4 -->
       <div class="row p-2 posts-page__post">
@@ -348,7 +369,6 @@
         <div class="col-lg-1 posts-page__post__content--empty-col"></div>
         <div class="col-2 mt-3 align-self-center posts-page__post__metrics">
           <ul style="list-style-type:none; text-align: center;">
-            <!-- display icons based on screen size -->
             <li class="d-none d-lg-block"><i class="py-2 px-1 fas fa-thumbs-up fa-2x"></i>
               40</li>
             <li class="d-none d-md-block d-lg-none"><i class="py-1 px-1 fas fa-thumbs-up fa-lg"></i>
@@ -369,26 +389,31 @@
               19</li>
           </ul>
         </div>
+        <!-- Metrics Ends -->
+
         <div class="col-lg-8 col-md-9 col-10">
+          <!-- Post Actions -->
           <div class="row posts-page__post__content--secondary__actions--container">
             <div class="col-4">
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
             </div>
           </div>
+          <!-- Post Content -->
           <div class="row p-4 posts-page__post__content">
             <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
               <img src="img/posts-post-img-4.jpg" class="img-thumbnail posts-page__post__content__image"
                 alt="Post Description Image">
-                <span class="badge bg-success">Health</span>
-                <span class="badge bg-secondary">Leisure Activity</span>
+              <span class="badge bg-success">Health</span>
+              <span class="badge bg-secondary">Leisure Activity</span>
             </div>
 
             <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">What is your favorite dance genre?</a>
+              <a class="posts-page__post__content--secondary__link" href="/post-details.html">What is your favorite
+                dance genre?</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by Kayla</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">6 hours ago</a>
+              - <a class="posts-page__post__content--secondary__actions" href="#">6 hours ago</a>
               <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
@@ -399,6 +424,7 @@
         <div class="col-lg-1 posts-page__post__content--tertiary"></div>
         <div class="col-1 posts-page__post__content--tertiary"></div>
       </div>
+      <!-- Post Ends -->
 
       <!-- Post 5 -->
       <div class="row p-2 posts-page__post">
@@ -426,13 +452,16 @@
               19</li>
           </ul>
         </div>
+        <!-- Metrics Ends -->
         <div class="col-lg-8 col-md-9 col-10">
+          <!-- Post Actions -->
           <div class="row posts-page__post__content--secondary__actions--container">
             <div class="col-4">
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Mark as read</a>
               <a class="px-2 posts-page__post__content--secondary__actions" href="#">Watch thread</a>
             </div>
           </div>
+          <!-- Post Content -->
           <div class="row p-4 posts-page__post__content">
             <div class="d-none d-md-block col-md-2 posts-page__post__content--primary">
               <img src="img/posts-post-img-5.jpg" class="img-thumbnail posts-page__post__content__image"
@@ -441,10 +470,11 @@
             </div>
 
             <div class="col-md-10 col-12 posts-page__post__content--secondary">
-              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How to save time and be efficient in your work?</a>
+              <a class="posts-page__post__content--secondary__link" href="/post-details.html">How to save time and be
+                efficient in your work?</a>
               <br /> <br />
               <a class="posts-page__post__content--secondary__actions" href="#">Posted by Britney</a>
-              - </i><a class="posts-page__post__content--secondary__actions" href="#">7 hours ago</a>
+              - <a class="posts-page__post__content--secondary__actions" href="#">7 hours ago</a>
               <i class="fas fa-circle fa-xs"></i> <a class="posts-page__post__content--secondary__actions"
                 href="#">Share</a>
               &nbsp;
@@ -455,13 +485,14 @@
         <div class="col-lg-1 posts-page__post__content--tertiary"></div>
         <div class="col-1 posts-page__post__content--tertiary"></div>
       </div>
+      <!-- Post Ends -->
 
       <!-- View More Button -->
       <div class="row mx-1 my-5 justify-content-center">
         <a href="#" class="link-text posts-page__view-more">View more...</a>
       </div>
-      <!-- Posts Container Ends -->
     </div>
+    <!-- Posts Container Ends -->
 
     <!-- Footer -->
     <div class="row common__footer-container">
@@ -472,21 +503,23 @@
         <div class="col-md-2 py-3 align-self-center">Dewan Designs</div>
         <div class="col-md-2"></div>
         <div class="col-md-3 py-3 align-self-end">Contact us&nbsp;&nbsp;
-          <a href="" class="link-text"><i class="fas fa-envelope-square"></i></a>&nbsp;
-          <a href="" class="link-text"><i class="fab fa-google"></i></a>&nbsp;
-          <a href="" class="link-text"><i class="fab fa-facebook"></i></a>&nbsp;
+          <a href="#" class="link-text"><i class="fas fa-envelope-square"></i></a>&nbsp;
+          <a href="#" class="link-text"><i class="fab fa-google"></i></a>&nbsp;
+          <a href="#" class="link-text"><i class="fab fa-facebook"></i></a>&nbsp;
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- POST SCRIPTS -->
-    <!-- 1. jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"></script>
+  <!-- POST SCRIPTS -->
+  <!-- 1. jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
 </body>
+<!-- Page body ends -->
 
 </html>
