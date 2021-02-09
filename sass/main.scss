@@ -45,23 +45,6 @@ body {
     @include center-text();
   }
 
-  // Bootstrap nav overrides.
-  // Feel free to modify them as you like.
-  .nav-link,
-  .link-text {
-    color: theme-text-color($selected-theme);
-    text-decoration: none;
-  }
-
-  .nav-link:hover,
-  .link-text:hover {
-    color: theme-secondary-text-color($selected-theme);
-    cursor: pointer;
-  }
-
-  .navbar-nav {
-    display: inline;
-  }
   // Search input
   &__nav__search input {
     border-radius: 10px;
@@ -78,6 +61,24 @@ body {
     background-color: theme-secondary-background-color($selected-theme);
     height: 7.5vh;
   }
+}
+
+// Bootstrap nav overrides.
+// Feel free to modify them as you like.
+.nav-link,
+.link-text {
+  color: theme-text-color($selected-theme);
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.link-text:hover {
+  color: theme-secondary-text-color($selected-theme);
+  cursor: pointer;
+}
+
+.navbar-nav {
+  display: inline;
 }
 
 /* 4. Media Queries. */

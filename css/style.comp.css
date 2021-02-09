@@ -595,6 +595,19 @@ body {
 .common__nav__user-actions, .common__nav__search-communities, .common__nav__logo {
   text-align: center; }
 
+.common .nav-link,
+.common .link-text {
+  color: #edf5e1;
+  text-decoration: none; }
+
+.common .nav-link:hover,
+.common .link-text:hover {
+  color: #ddf4fa;
+  cursor: pointer; }
+
+.common .navbar-nav {
+  display: inline; }
+
 .common__nav__search input {
   border-radius: 10px; }
 
@@ -608,19 +621,6 @@ body {
 .common__footer {
   background-color: #212529;
   height: 7.5vh; }
-
-.nav-link,
-.link-text {
-  color: #edf5e1;
-  text-decoration: none; }
-
-.nav-link:hover,
-.link-text:hover {
-  color: #ddf4fa;
-  cursor: pointer; }
-
-.navbar-nav {
-  display: inline; }
 
 /* 4. Media Queries. */
 @media (max-width: 767.98px) {
