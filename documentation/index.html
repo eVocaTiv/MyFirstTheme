@@ -106,32 +106,18 @@
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200"
                         role="navigation">
                         <ul class="nav">
-                            <li><a href="#line1">Getting Started</a></li>
-                            <li><a href="#line2">How to Install WordPress</a></li>
-                            <li><a href="#line3">How to Install Theme</a></li>
-                            <li><a href="#line4">Necessary Plugins</a></li>
-                            <li><a href="#line5">Creating Blog Pages</a></li>
-                            <li><a href="#line6">Revolution Slider</a></li>
-                            <li><a href="#line7">How to Use Option Panel</a>
-                                <ul class="nav">
-                                    <li><a href="#line7_1">General Options</a></li>
-                                    <li><a href="#line7_2">Style Options</a></li>
-                                    <li><a href="#line7_3">Header Options</a></li>
-                                    <li><a href="#line7_4">Font Options</a></li>
-                                    <li><a href="#line7_5">Slider Options</a></li>
-                                    <li><a href="#line7_6">Page Options</a></li>
-                                    <li><a href="#line7_7">Import & Export</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#line8">Support Desk</a></li>
-                            <li><a href="#line9">Files & Sources</a></li>
-                            <li><a href="#line10">Version History (Changelog)</a></li>
-                            <li><a href="#line11">Copyright and license</a></li>
+                            <li><a href="#line0">Introduction</a></li>
+                            <li><a href="#line1">Setup</a></li>
+                            <li><a href="#line2">HTML Structure</a></li>
+                            <li><a href="#line3">SASS / CSS Structure</a></li>
+                            <li><a href="#line4">JavaScript Scripts Used</a></li>
+                            <li><a href="#line5">Support Desk</a></li>
+                            <li><a href="#line6">Version History</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-md-9">
-                    <section class="welcome">
+                    <section id="line0" class="welcome">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -148,8 +134,7 @@
                                                 <li><strong>Author : </strong> <a
                                                         href="https://themeforest.net/user/dewandesigns"
                                                         target="_blank">Dewan Designs</a></li>
-                                                <li><strong>Support Email : </strong> <a href="kunalx011@gmail.com"
-                                                        target="_blank">Email for questions!</a></li>
+                                                <li><strong>Support Email : </strong> kunalx011@gmail.com</li>
                                             </ul>
                                         </div>
 
@@ -159,7 +144,7 @@
                                                 being my loyal customer.
                                                 <strong>You are awesome!</strong>
                                                 <br> You are entitled to get free lifetime updates to this product +
-                                                exceptional support from the author directly.
+                                                exceptional support from the me directly.
                                             </p>
 
                                             <p>This documentation is to help you regarding each step of customization.
@@ -197,15 +182,6 @@
                                 <p></p>
 
                                 <h4>Folders</h4>
-                                <!-- 
-                                <pre class="brush: html; highlight: [2,4]">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        YOUR CODES GOES HERE
-                                    </div>
-                                </div>
-                            </div></pre> -->
 
                                 <p>When you unpack the bundle, you'll get 2 folders</p>
                                 <ol>
@@ -219,18 +195,40 @@
                                 <h4>Using the Template</h4>
                                 <p> To start up a local server and open the template, you will require NPM, which is the
                                     standard node package manager.
-                                    You can download it from <a href="https://www.npmjs.com/get-npm"><b>here</b></a>
+                                    You can download it from <a href="https://www.npmjs.com/get-npm"
+                                        target="_blank"><b>here</b>.</a>
                                     <br>
                                     <br>
-                                    Once you have installed npm, go to the Template folder directory using your
-                                    terminal, and run
-                                    the command 'npm install' to install all the dependencies used in this project, including SASS. 
-                                    After all dependencies have been installed, run 'npm run start' to start the local development server. Once this command
-                                    is run,
-                                    you will be able to open up the template on http://localhost:8080 in your browser.
-                                    Select the page you want to visit from the list shown there.
-                                    To make changes, edit the .html files or .sass files directly and you will see the changes reflected automatically!
+                                    If you wish to use the pages in your project (which doesn't require NPM), then you
+                                    can do so aswell by just using
+                                    the .html files and css/style.css file.
                                 </p>
+                                <h4>Setting up a local server</h4>
+                                <ol>
+                                    <li>
+                                        Once you have installed npm, go to the Template folder directory using your
+                                        terminal / command line interface, and run
+                                        the command 'npm install' to install all the dependencies used in this
+                                        project,
+                                        including SASS which is used for writing the styling code.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        After all dependencies have been installed, run 'npm run start' to
+                                        start the local
+                                        development server. Once this command is run,
+                                        you will be able to open up the template on http://localhost:8080 in your
+                                        browser.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Select the page you want to visit from the list shown there.
+                                        To make changes, edit the .html files or .sass files directly and you will
+                                        see
+                                        the
+                                        changes reflected automatically!
+                                    </li>
+                                </ol>
                             </div>
                             <!-- end col -->
                         </div>
@@ -243,7 +241,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install WordPress
+                                <h2 class="dark-text">HTML Structure
                                     <hr>
                                 </h2>
                             </div>
@@ -252,34 +250,66 @@
                         <!-- end row -->
 
                         <div class="intro2 clearfix">
-                            <p><i class="fa fa-wordpress"></i> Lorem the It is a long established fact that a reader
-                                will be distracted..
-                                <br> Please read more about WordPress here. <a href="#">WordPress Installation via
-                                    FTP.</a> </p>
+                            <p><i class="fa fa-info"></i> If you are not familiar with HTML, you can learn about the
+                                basics <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">here</a>
+                            </p>
                         </div>
 
                         <hr>
 
-                        <h4>Upload via WordPress Admin</h4>
+                        <h4>HTML Folder Structure</h4>
 
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable
-                            content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                            a more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                            here', making it look like readable English.</p>
+                        <p>You will find all the .html files in the template folder itself. There are named intuitively
+                            depending on the page.
+                            There are a total 5 pages -:
+                            <ol>
+                                <li>Login Page - login.html</li>
+                                <li>Posts Page - posts.html</li>
+                                <li>Post Details Page - post-details.html</li>
+                                <li>Create A Post Page - create-post.html</li>
+                                <li>Community Page - community.html</li>
+                            </ol>
+                        </p>
 
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#"
-                            class="btn btn-info">Ask a Question</a>
+                        <h4>General HTML File Structure</h4>
+
+                        <p>All the HTML files follow a simple layout.
+                            <ol>
+                                <li><b>Styling CSS Imports</b>: Contains the final compiled CSS file</li>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    <!-- CSS Imports -->
+                                    <link href="bootstrap.min.css" rel="stylesheet" />
+                                    <link rel="stylesheet" href="css/style.css" />
+                                </pre>
+                                <li><b>Pre Scripts</b>: Imports for JavaScript scripts inside head tag</li>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    <!-- PRE SCRIPTS -->
+                                    <script src="path for js file.js" ></script>
+                                </pre>
+                                <li><b>Page body</b>: Contains all the content related to the page</li>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    <!-- PAGE CONTENT inside <body> tag -->
+                                </pre>
+                                <li><b>Post Scripts</b>: Imports for JavaScript scripts at the end of body</li>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    <!-- POST SCRIPTS -->
+                                    <script src="path for js file.js" ></script>
+                                </pre>
+                            </ol>
+
+                            All the .html files are documented with the content & sub-content and intuituive class
+                            names.
+                        </p>
+
+                        <h4>How To Update Styling</h4>
+                        <p> All of the .html pages import the final compiled CSS code from css/style.css file.
+                            There are corresponding .scss files which contain the specific styling for that page.
+                            If you want to change the styling, you can modify the corresponding .scss file and on saving
+                            it will
+                            autocompile and update the css/style.css file, and you will be able to see the reflected
+                            changes on your local server.</p>
+
                         <hr>
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/snFzbPm_RUE"
-                                        frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </section>
                     <!-- end section -->
 
@@ -287,7 +317,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install Theme
+                                <h2 class="dark-text">SASS / CSS Structure
                                     <hr>
                                 </h2>
                             </div>
@@ -295,44 +325,118 @@
                         </div>
                         <!-- end row -->
 
-                        <h4>Upload via WordPress Admin</h4>
-
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable
-                            content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                            a more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                            here', making it look like readable English.</p>
-
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#"
-                            class="btn btn-info">Ask a Question</a>
-
-                        <hr>
-
-                        <h4>Upload via FTP Server</h4>
-
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable
-                            content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                            a more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                            here', making it look like readable English.</p>
-
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#"
-                            class="btn btn-info">Ask a Question</a>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yQnQyI5WlKs"
-                                        frameborder="0" allowfullscreen></iframe>
-                                </div>
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z0kEVwJB_go"
-                                        frameborder="0" allowfullscreen></iframe>
-                                </div>
-
-                            </div>
+                        <div class="intro2 clearfix">
+                            <p><i class="fa fa-info"></i> If you are not familiar with SASS or CSS, you can learn about
+                                the
+                                basics of CSS <a href="https://www.w3schools.com/css/" target="_blank">here</a> and SASS
+                                <a href="https://sass-lang.com/guide" target="_blank">here</a>
+                            </p>
                         </div>
+
+                        <hr>
+                        <h4>SASS and CSS Folder Structure</h4>
+
+                        <p>There are 2 types of styling files in this project. SASS files (with the extension .scss) and
+                            CSS files (with the extension .css).
+                            To make changes in the styling, <b>edit only the SASS files</b>. On saving the SASS files,
+                            the local npm server will autocompile the .scss code into .css and you will see
+                            the changes reflecting in your page. If you wish to directly use the html page and .css file
+                            in your project, then you can use the style.css file in the css folder, which contains the
+                            final compiled css.
+                        </p>
+
+                        <p>The folder structure is as shown below</p>
+
+                        <ul>
+                            <li>css
+                                <ol>
+                                    <li><b>style.css</b> - contains the final compiled CSS</li>
+                                </ol>
+                            </li>
+                        </ul>
+
+                        <br>
+
+                        <ul>
+                            <li>sass
+                                <ol>
+                                    <li>pages
+                                        <ol>
+                                            <li><b>community.scss</b> - <i>contains styling for community.html</i></li>
+                                            <li><b>create-post.scss</b> - <i>contains styling for create-post.html</i>
+                                            </li>
+                                            <li><b>login.scss</b> - <i>contains styling for login.html</i></li>
+                                            <li><b>post-details.scss</b> - <i>contains styling for post-details.html</i>
+                                            </li>
+                                            <li><b>posts.scss</b> - <i>contains styling for posts.html</i></li>
+                                        </ol>
+                                    </li>
+                                    <li>utils
+                                        <ol>
+                                            <li><b>common.scss</b> - <i>contains utility functions, variables and
+                                                    mixins</i></li>
+                                        </ol>
+                                    </li>
+                                    <li><b>main.scss</b> - <i>imports all the .scss files and contains global styling
+                                            rules</i></li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <br>
+                        <p>Detailed comments are present in each .scss file with the table of contents.</p>
+
+                        <hr>
+
+                        <h4>General SASS File Structure</h4>
+
+                        <p>All the SASS files follow a simple order.
+                            <ol>
+                                <li><b>Table of Contents</b> - structure for the particular .scss file</li>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    -------------------------------------------------------------------*/
+                                    /*------------------------------------------------------------------
+                                    [Table of contents]
+
+                                    1. Import styling of all pages
+                                    2. Global styling rules
+                                    3. Styling for common elements
+                                        -3.1 Page Navigation
+                                        -3.2 Page Footer
+                                    4. Media Queries
+
+                                    -------------------------------------------------------------------*/
+                                </pre>
+                                <li><b>Imports</b>: All styling related imports used in this file</li>
+                                <pre class="brush: css; highlight: [2,4]">
+                                    /* Import styling of all pages */
+                                    @import './pages/login.scss';
+                                    @import './pages/posts.scss';
+                                    @import './pages/post-details.scss';
+                                    @import './pages/community.scss';
+                                    @import './pages/create-post.scss';
+                                </pre>
+                                <li><b>Page body</b>: Contains all the styling related to the page</li>
+                                <p>The styling rules follow the BEM convention where class names are of the form
+                                    block-name__elem-name. Therefore, you will see that all the components in every page
+                                    have the class name as page-name__component-name. For example, to style the body for
+                                    the Login page
+                                    which has the class 'login-page__body', see below snippet.
+                                </p>
+                                <pre class="brush: html; highlight: [2,4]">
+                                    .login-page {
+
+                                        &__body {
+                                            color: theme-text-color($selected-theme);
+                                        }
+
+                                        // ..style other content in this page..
+                                    }
+                                </pre>
+                            </ol>
+
+                            All the .scss files are documented properly so you can navigate through the content styling.
+                            names.
+                        </p>
 
                     </section>
                     <!-- end section -->
@@ -341,7 +445,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Necessary Plugins
+                                <h2 class="dark-text">JavaScript Scripts Used
                                     <hr>
                                 </h2>
                             </div>
@@ -351,43 +455,45 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="images/upload/plugin1.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #1</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please
-                                    read more about WordPress here.</p>
+                                <img src="images/upload/bootstrap5.png" alt="" class="img-responsive img-thumbnail">
+                                <h4>Bootstrap version 5.0</h4>
+                                <p>Bootstrap is the world’s most popular UI framework for building responsive and sleek
+                                    websites. It requires a JavaScript bundle and popper.js to run, both of which have
+                                    been included in all the pages in the POST SCRIPTS.</p>
                             </div>
                             <!-- end col -->
 
                             <div class="col-md-4">
-                                <img src="images/upload/plugin2.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #2</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please
-                                    read more about WordPress here.</p>
+                                <img src="images/upload/fontAwesome.png" alt="" class="img-responsive img-thumbnail">
+                                <h4>Font Awesome</h4>
+                                <p>Font Awesome is the web's most popular icon set and toolkit. It is used vector icons
+                                    and social logos in the pages. It is included in all the pages in the PRE SCRIPTS.
+                                </p>
                             </div>
                             <!-- end col -->
 
                             <div class="col-md-4">
-                                <img src="images/upload/plugin3.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #3</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please
-                                    read more about WordPress here.</p>
+                                <img src="images/upload/jQuery.png" alt="" class="img-responsive img-thumbnail">
+                                <h4>jQuery</h4>
+                                <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like
+                                    HTML document traversal and manipulation, event handling, animation, and Ajax much
+                                    simpler. It is only used for demonstrating login page redirection, you can do much
+                                    more with it! It is included in all the pages in the PRE SCRIPTS.</p>
                             </div>
                             <!-- end col -->
 
                             <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will be distracted by the readable content of a page
-                                    when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using 'Content here,
-                                    content here', making it look like readable English.</p>
+                                <p>Learn more about Bootstrap 5.0
+                                    <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                                        target="_blank">here</a>
+                                    <br>
+                                    Learn more about Font Awesome
+                                    <a href="https://fontawesome.com/" target="_blank">here</a>
+                                    <br>
+                                    Learn more about jQuery
+                                    <a href="https://jquery.com/" target="_blank">here</a>
+                                </p>
 
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#"
-                                        class="btn btn-info">Ask a Question</a>
-                                </div>
                             </div>
                         </div>
                         <!-- end row -->
@@ -399,314 +505,6 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Creating Blog Pages
-                                    <hr>
-                                </h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will be distracted by the readable content of a page
-                                    when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using 'Content here,
-                                    content here', making it look like readable English.</p>
-                            </div>
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_1">WordPress Blog Page -</h4>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader
-                                        ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader
-                                        will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_2">Blog Post Sections -</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please
-                                    read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader
-                                        ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader
-                                        will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                                <h4 id="line5_3">Create Blog Gallery -</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please
-                                    read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader
-                                        ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader
-                                        will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line6" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install Revolution Slider
-                                    <hr>
-                                </h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will be distracted by the readable content of a page
-                                    when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using 'Content here,
-                                    content here', making it look like readable English.</p>
-                            </div>
-
-                            <div class="col-md-6">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                                <h4>Installation Slider</h4>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader
-                                        ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader
-                                        will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-6">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                                <h4>Updating Slider</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please
-                                    read more about WordPress here.</p>
-                                <ul>
-                                    <li><strong>Step 1</strong> - Lorem the It is a long established fact that a reader
-                                        ease read more about WordPress here.</li>
-                                    <li><strong>Step 2</strong> - Lorem the It is a long established fact that a reader
-                                        will be distracted.. Please read more about WordPress here.</li>
-                                    <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- end col -->
-
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line7" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Use Option Panel
-                                    <hr>
-                                </h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_1">General Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_2">Style Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_3">Header Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_4">Font Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_5">Slider Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_6">Page Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
-                                        src="images/upload/thumbnail.png" alt=""
-                                        class="img-responsive img-thumbnail"></a>
-                            </div>
-
-                            <div class="col-md-8">
-                                <h4 id="line7_7">Import & Export Options - </h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. long
-                                    established fact that a reader will English.</p>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line8" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Support Desk
                                     <hr>
                                 </h2>
@@ -714,29 +512,37 @@
                             <!-- end col -->
                         </div>
                         <!-- end row -->
+                        <div class="intro2 clearfix">
+                            <p><i class="fa fa-check-circle"></i> If you are satisfied with this template, I request you to go to your downloads section on
+                                ThemeForest.net and rate it with 5 stars. Otherwise, feel free to send me an email and I will
+                                try to find
+                                the best solution for you!
+                            </p>
+                        </div>
+                        <br>
 
                         <div class="row">
                             <div class="col-md-6">
                                 <p>Please remember you have purchased a very affordable theme and you have not paid for
-                                    a full-time web design agency. Occasionally we will help with small tweaks, but
+                                    a full-time web design agency. Occasionally I will help with small tweaks, but
                                     these requests will be put on a lower priority due to their nature. Support is also
-                                    100% optional and we provide it for your connivence, so please be patient, polite
+                                    100% optional and I provide it for your convenience, so please be patient, polite
                                     and respectful.</p>
 
-                                <p>Please visit our <a href="http://themeforest.net/user/yourusername"><strong>profile
-                                            page</strong></a> or ask question <a
-                                        href="mailto:yourusername@gmail.com">@yourusername</a></p>
+                                <p>Please visit my <a href="http://themeforest.net/user/dewandesigns"><strong>profile
+                                            page</strong></a> or email me a question <a
+                                        href="mailto:kunalx011@gmail.com">@DewanDesigns</a></p>
 
                                 <strong>Support for my items includes:</strong>
                                 <ul>
                                     <li>* Responding to questions or problems regarding the item and its features</li>
                                     <li>* Fixing bugs and reported issues</li>
-                                    <li>* Providing updates to ensure compatibility with new software versions</li>
                                 </ul>
                                 <strong>Item support does not include:</strong>
                                 <ul>
-                                    <li>* Customization and installation services</li>
+                                    <li>* Customization</li>
                                     <li>* Support for third party software and plug-ins</li>
+                                    <li>* Entertaining requests for backend or a functional website</li>
                                 </ul>
 
                             </div>
@@ -744,22 +550,15 @@
                             <div class="col-md-6">
                                 <strong>Before seeking support, please...</strong>
                                 <ul>
-                                    <li>* Make sure your question is a valid Theme Issue and not a customization
+                                    <li>* Make sure your question is a valid issue and not a customization
                                         request.</li>
                                     <li>* Make sure you have read through the documentation and any related video guides
                                         before asking support on how to accomplish a task.</li>
-                                    <li>* Make sure to double check the theme FAQs.</li>
-                                    <li>* Try disabling any active plugins to make sure there isn't a conflict with a
-                                        plugin. And if there is this way you can let us know.</li>
-                                    <li>* If you have customized your theme and now have an issue, back-track to make
-                                        sure you didn't make a mistake. If you have made changes and can't find the
-                                        issue, please provide us with your changelog.</li>
-                                    <li>* Almost 80% of the time we find that the solution to people's issues can be
+                                    <li>* Make sure to double check the FAQs.</li>
+                                    <li>* Almost 80% of the time is it found that the solution to people's issues can be
                                         solved with a simple "Google Search". You might want to try that before seeking
-                                        support. You might be able to fix the issue yourself much quicker than we can
+                                        support. You might be able to fix the issue yourself much quicker than I can
                                         respond to your request.</li>
-                                    <li>* Make sure to state the name of the theme you are having issues with when
-                                        requesting support via ThemeForest.</li>
                                 </ul>
                             </div>
                         </div>
@@ -768,73 +567,7 @@
                     </section>
                     <!-- end section -->
 
-                    <section id="line9" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Files & Sources
-                                    <hr>
-                                </h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <strong>Included Stylesheets</strong>
-
-                                <p>These are the primary CSS files used for general front-end styling. Use these to
-                                    customize your theme even further. All included JavaScript codes under
-                                    <strong>yourthemename/css/</strong></p>
-
-                                <ul>
-                                    <li>1. style.css - Primary stylesheet</li>
-                                    <li>2. bootstrap.css - Bootstrap stylesheet</li>
-                                    <li>3. owl-carousel.css - OWL Carousel</li>
-                                    <li>4. fontawesome.css - FontAwesome Font Icons stylesheet</li>
-                                    <li>5. custom.css - Pathos Color Schemes stylesheet</li>
-                                    <li>6. prettyPhoto.css - Lightbox effect css file</li>
-                                    <li>7. flexslider.css - Flexslider css file</li>
-                                    <li>8. et-line.css - Elegant icons css file</li>
-                                    <li>9. carousel.css - OWL Carousel css file</li>
-                                    <li>10. animate.css - CSS3 animations css file</li>
-                                </ul>
-
-                            </div>
-
-                            <div class="col-md-6">
-                                <strong>Included JavaScript</strong>
-
-                                <p>These are the various attribution inks to the Javascript files included or modified
-                                    to work with in this theme. All included JavaScript codes under
-                                    <strong>yourthemename/js/</strong></p>
-
-                                <ul>
-                                    <li>1. bootstrap.js - Bootstrap JavaScript</li>
-                                    <li>2. custom.js - All JavaScript Plugins</li>
-                                    <li>3. retina.js - Retina JavaScript</li>
-                                    <li>4. jquery.js - Base JavaScript</li>
-                                    <li>5. prettyPhoto.js - Lightbox JavaScript</li>
-                                    <li>6. owl-carousel.js - Lightbox JavaScript</li>
-                                    <li>7. revslider.js - Revolution Slider JavaScript</li>
-                                    <li>8. flexslider.js - Flexslider JavaScript</li>
-                                    <li>9. awesome-grid.nin.js - Awesome grid portfolio JavaScript</li>
-                                    <li>10. circle.js - Coming soon page JavaScript</li>
-                                    <li>11. contact.js - Contact form validate JavaScript</li>
-                                    <li>12. isotope.js - Masonry Portfolio JavaScript</li>
-                                    <li>13. progress.js - Progress bar JavaScript</li>
-                                    <li>14. rotate.js - Text rotate effect JavaScript</li>
-                                    <li>15. wow.js - CSS3 animation JavaScript</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line10" class="section">
+                    <section id="line6" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -848,16 +581,12 @@
 
                         <div class="row">
                             <div class="col-md-12">
-
-                                <p>You can find the version history (changelog.txt) file on
-                                    <strong>yourthemename-full.zip</strong> folder or you can check changelog on theme
-                                    sale page.</p>
-                                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning,
-                                    I'd be glad to help you if you have any questions relating to this theme. No
+                                <p>Once again, thank you so much for purchasing this template. As I said at the
+                                    beginning,
+                                    I'd be glad to help you if you have any questions relating to this template. No
                                     guarantees, but I'll do my best to assist. If you have a more general question
-                                    relating to the themes on ThemeForest, you might consider visiting the forums and
+                                    relating to ThemeForest, you might consider visiting the forums and
                                     asking your question in the "Item Discussion" section.</p>
-
                                 <hr>
 
                                 <h4>Changelog</h4>
@@ -865,76 +594,11 @@
                                 <pre class="brush: html">
 
                                         -----------------------------------------------------------------------------------------
-                                        Version 3.8.4 - May 7th, 2015
+                                        Version 1.0.0 - February 10, 2021
                                         -----------------------------------------------------------------------------------------
 
-                                        - new revolution slider plugin version
-                                        - fixed security issue with xss vulnerability
-                                        - improved demo importer for certain server environments
-                                        - updated WooCommerce template files for the outdated message in system status
-                                        - added suhosin check in system status 
-                                        - added information that explains ZipArchive is required on your server for importing demos 
-                                        - portfolio Grid template improvement
-                                        - added more information to demo popup message for individual demo requirements
-                                        - RTL style improvements
-                                        - breadcrumb function improved for various areas
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 3.8.3 - May 7th, 2015
-                                        -----------------------------------------------------------------------------------------
-                                        - fixed responsive / retina issue for larger logos
-                                        - fusion slider now uses responsive headings all the time
-                                        - dropped custom Avada styles for select boxes in IE since it is not supported
-                                        - fixed compatibility issue with Category Order and Taxonomy Terms Order plugin
-                                        - fixed issue of full width background being affected by padding options
-                                        - tested and fixed hellobar issue 
-                                        - typography settings now apply to single post pages
-                                        - improved smooth scroll in certain situations
-                                        - youtube & vimeo videos will show at normal size in light box as long as video embed link is not used
-                                        - fixed issue of â€œfixedâ€ featured image mode not working for carousels / recent work
-                                        - fixed issue of header tagline font not working with font options
-
-                                        -----------------------------------------------------------------------------------------
-                                        Version 3.8.2 - May 7th, 2015
-                                        -----------------------------------------------------------------------------------------
-                                        - fixed formatting issues with Turkish language files 
-                                        - letter spacing menu option improvement
-                                        - improved fusion slider max content width setting
-                                        - removed the â€œdisable first featured image on productsâ€ setting since it does not apply
-                                        - improved portfolio featured image loading
-                                        - removed encoding from tracking code, space before head, space before body, and custom CSS to stop it from parsing code within TO and removing special characters e.g. +
-                                        - woo login box now shows login fields for logged out users
-                                        - woo cart / my account links now show on mobile 
-                                        - fixed button styling issue with gravity forms
-
-
+                                        - Added 5 pages - Login, Posts, Create A Post, Community and Post Details.
                                       </pre>
-
-                            </div>
-                        </div>
-                        <!-- end row -->
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line11" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Copyright and license
-                                    <hr>
-                                </h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <p>Code released under the <a href="#" target="_blank">Un License</a> License.</p>
-                                <p>For more information about copyright and license check <a
-                                        href="https://choosealicense.com/" target="_blank">choosealicense.com</a>.</p>
 
                             </div>
                         </div>
