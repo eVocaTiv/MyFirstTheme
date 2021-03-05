@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Theme Page",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server --browser=chrome",
@@ -21,6 +24,7 @@
     "postcss-cli": "^8.3.1"
   },
   "dependencies": {
-    "bootstrap": "^4.5.3"
+    "bootstrap": "^4.5.3",
+    "live-server": "^1.2.1"
   }
 }
